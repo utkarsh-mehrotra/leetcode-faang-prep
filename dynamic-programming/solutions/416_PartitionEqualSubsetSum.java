@@ -1,17 +1,18 @@
-/**
- * 416. Partition Equal Subset Sum
- * Difficulty: Medium
- * Pattern: 0/1 Knapsack
- * 
- * Auto-generated blueprint.
- */
 class _416_PartitionEqualSubsetSum {
-    // TODO: Implement Partition Equal Subset Sum algorithm
-    public void solve() {
-        // Core pattern: 0/1 Knapsack
+    public boolean canPartition(int[] nums) {
+        int sum = 0;
+        for (int n : nums) sum += n;
+        if (sum % 2 != 0) return false;
+        sum /= 2;
+        
+        boolean[] dp = new boolean[sum + 1];
+        dp[0] = true;
+        for (int n : nums) {
+            for (int i=sum; i>=n; i--) {
+                dp[i] = dp[i] || dp[i-n];
+            }
+        }
+        return dp[sum];
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Partition Equal Subset Sum template loaded.");
-    }
+    public static void main(String[] args) {}
 }

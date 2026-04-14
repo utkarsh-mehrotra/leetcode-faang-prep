@@ -1,17 +1,18 @@
-/**
- * 647. Palindromic Substrings
- * Difficulty: Medium
- * Pattern: 2D DP / Expand Around Centre
- * 
- * Auto-generated blueprint.
- */
 class _647_PalindromicSubstrings {
-    // TODO: Implement Palindromic Substrings algorithm
-    public void solve() {
-        // Core pattern: 2D DP / Expand Around Centre
+    public int countSubstrings(String s) {
+        int count = 0;
+        for (int i=0; i<s.length(); i++) {
+            count += expand(s, i, i);
+            count += expand(s, i, i+1);
+        }
+        return count;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Palindromic Substrings template loaded.");
+    private int expand(String s, int l, int r) {
+        int count = 0;
+        while (l >= 0 && r < s.length() && s.charAt(l) == s.charAt(r)) {
+            count++; l--; r++;
+        }
+        return count;
     }
+    public static void main(String[] args) {}
 }

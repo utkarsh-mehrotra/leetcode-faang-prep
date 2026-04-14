@@ -1,17 +1,17 @@
-/**
- * 174. Dungeon Game
- * Difficulty: Hard
- * Pattern: 2D Grid DP (Reverse)
- * 
- * Auto-generated blueprint.
- */
 class _174_DungeonGame {
-    // TODO: Implement Dungeon Game algorithm
-    public void solve() {
-        // Core pattern: 2D Grid DP (Reverse)
+    public int calculateMinimumHP(int[][] dungeon) {
+        int m = dungeon.length, n = dungeon[0].length;
+        int[][] dp = new int[m+1][n+1];
+        for (int i=0; i<=m; i++) java.util.Arrays.fill(dp[i], Integer.MAX_VALUE);
+        dp[m][n-1] = 1; dp[m-1][n] = 1;
+        
+        for (int i=m-1; i>=0; i--) {
+            for (int j=n-1; j>=0; j--) {
+                int minHealth = Math.min(dp[i+1][j], dp[i][j+1]) - dungeon[i][j];
+                dp[i][j] = minHealth <= 0 ? 1 : minHealth;
+            }
+        }
+        return dp[0][0];
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Dungeon Game template loaded.");
-    }
+    public static void main(String[] args) {}
 }

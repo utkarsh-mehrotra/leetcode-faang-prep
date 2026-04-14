@@ -1,17 +1,15 @@
-/**
- * 300. Longest Increasing Subsequence
- * Difficulty: Medium
- * Pattern: LIS (DP / Binary Search)
- * 
- * Auto-generated blueprint.
- */
 class _300_LongestIncreasingSubsequence {
-    // TODO: Implement Longest Increasing Subsequence algorithm
-    public void solve() {
-        // Core pattern: LIS (DP / Binary Search)
+    public int lengthOfLIS(int[] nums) {
+        if (nums == null || nums.length == 0) return 0;
+        int[] dp = new int[nums.length];
+        int len = 0;
+        for (int num : nums) {
+            int i = java.util.Arrays.binarySearch(dp, 0, len, num);
+            if (i < 0) i = -(i + 1);
+            dp[i] = num;
+            if (i == len) len++;
+        }
+        return len;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Longest Increasing Subsequence template loaded.");
-    }
+    public static void main(String[] args) {}
 }

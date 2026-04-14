@@ -1,17 +1,13 @@
-/**
- * 518. Coin Change II
- * Difficulty: Medium
- * Pattern: Unbounded Knapsack (Count)
- * 
- * Auto-generated blueprint.
- */
 class _518_CoinChangeIi {
-    // TODO: Implement Coin Change II algorithm
-    public void solve() {
-        // Core pattern: Unbounded Knapsack (Count)
+    public int change(int amount, int[] coins) {
+        int[] dp = new int[amount + 1];
+        dp[0] = 1;
+        for (int c : coins) {
+            for (int i=c; i<=amount; i++) {
+                dp[i] += dp[i-c];
+            }
+        }
+        return dp[amount];
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Coin Change II template loaded.");
-    }
+    public static void main(String[] args) {}
 }
