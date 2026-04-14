@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1616_BinarySearchOperationsVariation16 {
+class _1616_BinarySearchOperationsVariation16 {
     // TODO: Implement Binary search Operations Variation 16 algorithm
     public void solve() {
         // Core pattern: Standard BS

@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1414_SlidingWindowOperationsVariation14 {
+class _1414_SlidingWindowOperationsVariation14 {
     // TODO: Implement Sliding window Operations Variation 14 algorithm
     public void solve() {
         // Core pattern: Optimized Shrinking

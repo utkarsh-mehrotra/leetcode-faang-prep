@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1162_AsFarFromLandAsPossible {
+class _1162_AsFarFromLandAsPossible {
     // TODO: Implement As Far from Land as Possible algorithm
     public void solve() {
         // Core pattern: Multi-Source BFS

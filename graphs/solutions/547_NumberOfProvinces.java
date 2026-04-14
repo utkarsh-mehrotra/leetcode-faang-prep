@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _547_NumberOfProvinces {
+class _547_NumberOfProvinces {
     // TODO: Implement Number of Provinces algorithm
     public void solve() {
         // Core pattern: Union-Find / DFS

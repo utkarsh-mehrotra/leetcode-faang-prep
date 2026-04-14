@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _064_MinimumPathSum {
+class _064_MinimumPathSum {
     // TODO: Implement Minimum Path Sum algorithm
     public void solve() {
         // Core pattern: 2D Grid DP

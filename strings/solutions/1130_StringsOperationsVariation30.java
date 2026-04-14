@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1130_StringsOperationsVariation30 {
+class _1130_StringsOperationsVariation30 {
     // TODO: Implement Strings Operations Variation 30 algorithm
     public void solve() {
         // Core pattern: Hash Map

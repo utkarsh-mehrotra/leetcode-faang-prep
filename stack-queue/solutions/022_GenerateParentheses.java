@@ -5,7 +5,7 @@
  */
 import java.util.*;
 
-public class _022_GenerateParentheses {
+class _022_GenerateParentheses {
     public List<String> generateParenthesis(int n) {
         List<String> res = new ArrayList<>();
         backtrack(res, "", 0, 0, n);

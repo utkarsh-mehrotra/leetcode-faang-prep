@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1112_StringsOperationsVariation12 {
+class _1112_StringsOperationsVariation12 {
     // TODO: Implement Strings Operations Variation 12 algorithm
     public void solve() {
         // Core pattern: Sliding Window

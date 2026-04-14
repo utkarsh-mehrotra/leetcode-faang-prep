@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _174_DungeonGame {
+class _174_DungeonGame {
     // TODO: Implement Dungeon Game algorithm
     public void solve() {
         // Core pattern: 2D Grid DP (Reverse)

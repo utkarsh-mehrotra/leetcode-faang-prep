@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1223_TreesOperationsVariation23 {
+class _1223_TreesOperationsVariation23 {
     // TODO: Implement Trees Operations Variation 23 algorithm
     public void solve() {
         // Core pattern: Post-order

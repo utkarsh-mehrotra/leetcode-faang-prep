@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1125_StringsOperationsVariation25 {
+class _1125_StringsOperationsVariation25 {
     // TODO: Implement Strings Operations Variation 25 algorithm
     public void solve() {
         // Core pattern: Two Pointers

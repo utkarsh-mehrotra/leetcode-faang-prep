@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1329_BacktrackingOperationsVariation29 {
+class _1329_BacktrackingOperationsVariation29 {
     // TODO: Implement Backtracking Operations Variation 29 algorithm
     public void solve() {
         // Core pattern: Permutations

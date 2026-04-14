@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _152_MaximumProductSubarray {
+class _152_MaximumProductSubarray {
     // TODO: Implement Maximum Product Subarray algorithm
     public void solve() {
         // Core pattern: 1D DP (Track Min/Max)

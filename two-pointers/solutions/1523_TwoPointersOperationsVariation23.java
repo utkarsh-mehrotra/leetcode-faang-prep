@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1523_TwoPointersOperationsVariation23 {
+class _1523_TwoPointersOperationsVariation23 {
     // TODO: Implement Two pointers Operations Variation 23 algorithm
     public void solve() {
         // Core pattern: Partitioning

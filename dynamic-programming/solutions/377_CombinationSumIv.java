@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _377_CombinationSumIv {
+class _377_CombinationSumIv {
     // TODO: Implement Combination Sum IV algorithm
     public void solve() {
         // Core pattern: Unbounded Knapsack (Order matters)

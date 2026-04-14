@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _721_AccountsMerge {
+class _721_AccountsMerge {
     // TODO: Implement Accounts Merge algorithm
     public void solve() {
         // Core pattern: Union-Find / DFS

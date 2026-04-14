@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _097_InterleavingString {
+class _097_InterleavingString {
     // TODO: Implement Interleaving String algorithm
     public void solve() {
         // Core pattern: 2D String DP

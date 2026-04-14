@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1143_LongestCommonSubsequence {
+class _1143_LongestCommonSubsequence {
     // TODO: Implement Longest Common Subsequence algorithm
     public void solve() {
         // Core pattern: LCS (2D String DP)

@@ -5,7 +5,7 @@
  */
 import java.util.*;
 
-public class _051_NQueens {
+class _051_NQueens {
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> res = new ArrayList<>();
         char[][] board = new char[n][n];

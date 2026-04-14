@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1428_SlidingWindowOperationsVariation28 {
+class _1428_SlidingWindowOperationsVariation28 {
     // TODO: Implement Sliding window Operations Variation 28 algorithm
     public void solve() {
         // Core pattern: Fixed Window

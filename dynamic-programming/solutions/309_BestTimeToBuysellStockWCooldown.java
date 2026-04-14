@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _309_BestTimeToBuysellStockWCooldown {
+class _309_BestTimeToBuysellStockWCooldown {
     // TODO: Implement Best Time to Buy/Sell Stock w/ Cooldown algorithm
     public void solve() {
         // Core pattern: State Machine DP

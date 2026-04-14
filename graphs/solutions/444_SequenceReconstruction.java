@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _444_SequenceReconstruction {
+class _444_SequenceReconstruction {
     // TODO: Implement Sequence Reconstruction algorithm
     public void solve() {
         // Core pattern: Topological Sort

@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1519_TwoPointersOperationsVariation19 {
+class _1519_TwoPointersOperationsVariation19 {
     // TODO: Implement Two pointers Operations Variation 19 algorithm
     public void solve() {
         // Core pattern: Partitioning

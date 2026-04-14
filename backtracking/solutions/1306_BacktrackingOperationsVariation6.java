@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1306_BacktrackingOperationsVariation6 {
+class _1306_BacktrackingOperationsVariation6 {
     // TODO: Implement Backtracking Operations Variation 6 algorithm
     public void solve() {
         // Core pattern: Subsets

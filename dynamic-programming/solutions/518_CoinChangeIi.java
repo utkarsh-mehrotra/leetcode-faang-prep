@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _518_CoinChangeIi {
+class _518_CoinChangeIi {
     // TODO: Implement Coin Change II algorithm
     public void solve() {
         // Core pattern: Unbounded Knapsack (Count)

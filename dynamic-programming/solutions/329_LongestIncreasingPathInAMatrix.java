@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _329_LongestIncreasingPathInAMatrix {
+class _329_LongestIncreasingPathInAMatrix {
     // TODO: Implement Longest Increasing Path in a Matrix algorithm
     public void solve() {
         // Core pattern: DFS + Memoization (2D DP)

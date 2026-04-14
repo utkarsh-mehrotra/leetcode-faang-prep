@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _785_IsGraphBipartite {
+class _785_IsGraphBipartite {
     // TODO: Implement Is Graph Bipartite? algorithm
     public void solve() {
         // Core pattern: BFS / DFS (Coloring)

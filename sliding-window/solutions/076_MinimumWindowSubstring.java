@@ -3,7 +3,7 @@
  * Difficulty: Hard
  * Pattern: Sliding Window
  */
-public class _076_MinimumWindowSubstring {
+class _076_MinimumWindowSubstring {
     public String minWindow(String s, String t) {
         if (s.length() < t.length() || t.length() == 0) return "";
         int[] map = new int[128];

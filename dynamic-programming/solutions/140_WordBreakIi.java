@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _140_WordBreakIi {
+class _140_WordBreakIi {
     // TODO: Implement Word Break II algorithm
     public void solve() {
         // Core pattern: DP + Backtracking (Memoized)

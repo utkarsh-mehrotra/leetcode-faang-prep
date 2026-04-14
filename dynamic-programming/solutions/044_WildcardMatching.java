@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _044_WildcardMatching {
+class _044_WildcardMatching {
     // TODO: Implement Wildcard Matching algorithm
     public void solve() {
         // Core pattern: 2D String DP

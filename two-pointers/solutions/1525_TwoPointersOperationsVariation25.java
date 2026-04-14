@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1525_TwoPointersOperationsVariation25 {
+class _1525_TwoPointersOperationsVariation25 {
     // TODO: Implement Two pointers Operations Variation 25 algorithm
     public void solve() {
         // Core pattern: Fast & Slow

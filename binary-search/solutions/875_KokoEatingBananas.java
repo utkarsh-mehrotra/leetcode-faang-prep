@@ -3,7 +3,7 @@
  * Difficulty: Medium
  * Pattern: Binary Search on Answer
  */
-public class _875_KokoEatingBananas {
+class _875_KokoEatingBananas {
     public int minEatingSpeed(int[] piles, int h) {
         int l = 1, r = 1;
         for (int p : piles) r = Math.max(r, p);

@@ -5,7 +5,7 @@
  */
 import java.util.*;
 
-public class _621_TaskScheduler {
+class _621_TaskScheduler {
     public int leastInterval(char[] tasks, int n) {
         int[] freqs = new int[26];
         int maxFreq = 0;

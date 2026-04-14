@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1718_HeapPriorityQueueOperationsVariation18 {
+class _1718_HeapPriorityQueueOperationsVariation18 {
     // TODO: Implement Heap priority queue Operations Variation 18 algorithm
     public void solve() {
         // Core pattern: Two Heaps

@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1308_BacktrackingOperationsVariation8 {
+class _1308_BacktrackingOperationsVariation8 {
     // TODO: Implement Backtracking Operations Variation 8 algorithm
     public void solve() {
         // Core pattern: Combinations

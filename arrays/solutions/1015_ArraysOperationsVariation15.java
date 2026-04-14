@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1015_ArraysOperationsVariation15 {
+class _1015_ArraysOperationsVariation15 {
     // TODO: Implement Arrays Operations Variation 15 algorithm
     public void solve() {
         // Core pattern: Hash Map

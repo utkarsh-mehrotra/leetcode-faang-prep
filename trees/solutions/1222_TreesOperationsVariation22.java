@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1222_TreesOperationsVariation22 {
+class _1222_TreesOperationsVariation22 {
     // TODO: Implement Trees Operations Variation 22 algorithm
     public void solve() {
         // Core pattern: BST Traversal

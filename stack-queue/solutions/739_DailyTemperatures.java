@@ -5,7 +5,7 @@
  */
 import java.util.*;
 
-public class _739_DailyTemperatures {
+class _739_DailyTemperatures {
     public int[] dailyTemperatures(int[] temperatures) {
         int n = temperatures.length;
         int[] res = new int[n];

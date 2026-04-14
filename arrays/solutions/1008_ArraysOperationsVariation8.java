@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1008_ArraysOperationsVariation8 {
+class _1008_ArraysOperationsVariation8 {
     // TODO: Implement Arrays Operations Variation 8 algorithm
     public void solve() {
         // Core pattern: Matrix

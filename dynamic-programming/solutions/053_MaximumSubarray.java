@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _053_MaximumSubarray {
+class _053_MaximumSubarray {
     // TODO: Implement Maximum Subarray algorithm
     public void solve() {
         // Core pattern: 1D DP / Kadane's

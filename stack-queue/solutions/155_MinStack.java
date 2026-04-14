@@ -5,7 +5,7 @@
  */
 import java.util.Stack;
 
-public class _155_MinStack {
+class _155_MinStack {
     private Stack<int[]> stack;
 
     public _155_MinStack() {

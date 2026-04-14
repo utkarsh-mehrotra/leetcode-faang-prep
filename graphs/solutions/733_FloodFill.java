@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _733_FloodFill {
+class _733_FloodFill {
     // TODO: Implement Flood Fill algorithm
     public void solve() {
         // Core pattern: DFS / BFS (Grid)

@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _399_EvaluateDivision {
+class _399_EvaluateDivision {
     // TODO: Implement Evaluate Division algorithm
     public void solve() {
         // Core pattern: BFS / Union-Find

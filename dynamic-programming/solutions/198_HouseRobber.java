@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _198_HouseRobber {
+class _198_HouseRobber {
     // TODO: Implement House Robber algorithm
     public void solve() {
         // Core pattern: 1D DP (Decision)

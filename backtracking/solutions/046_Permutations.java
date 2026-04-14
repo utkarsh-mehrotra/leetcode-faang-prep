@@ -6,7 +6,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class _046_Permutations {
+class _046_Permutations {
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         backtrack(nums, new ArrayList<>(), res);

@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1613_BinarySearchOperationsVariation13 {
+class _1613_BinarySearchOperationsVariation13 {
     // TODO: Implement Binary search Operations Variation 13 algorithm
     public void solve() {
         // Core pattern: BS on Answer

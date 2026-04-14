@@ -28,7 +28,7 @@
  */
 import java.util.Arrays;
 
-public class _322_CoinChange {
+class _322_CoinChange {
 
     // ── Approach 1: Bottom-Up DP (standard interview answer) ──────────────────
     public int coinChange(int[] coins, int amount) {

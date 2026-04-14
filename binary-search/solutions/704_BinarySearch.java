@@ -3,7 +3,7 @@
  * Difficulty: Easy
  * Pattern: Binary Search
  */
-public class _704_BinarySearch {
+class _704_BinarySearch {
     public int search(int[] nums, int target) {
         int l = 0, r = nums.length - 1;
         while (l <= r) {

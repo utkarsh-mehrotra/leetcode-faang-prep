@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1202_SmallestStringWithSwaps {
+class _1202_SmallestStringWithSwaps {
     // TODO: Implement Smallest String With Swaps algorithm
     public void solve() {
         // Core pattern: Union-Find

@@ -3,7 +3,7 @@
  * Difficulty: Medium
  * Pattern: Two Pointers
  */
-public class _011_ContainerWithMostWater {
+class _011_ContainerWithMostWater {
     public int maxArea(int[] height) {
         int maxArea = 0, l = 0, r = height.length - 1;
         while (l < r) {

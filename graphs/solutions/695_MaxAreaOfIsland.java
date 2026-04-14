@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _695_MaxAreaOfIsland {
+class _695_MaxAreaOfIsland {
     // TODO: Implement Max Area of Island algorithm
     public void solve() {
         // Core pattern: DFS / BFS (Grid)

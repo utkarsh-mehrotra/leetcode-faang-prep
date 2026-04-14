@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _743_NetworkDelayTime {
+class _743_NetworkDelayTime {
     // TODO: Implement Network Delay Time algorithm
     public void solve() {
         // Core pattern: Dijkstra's Algorithm

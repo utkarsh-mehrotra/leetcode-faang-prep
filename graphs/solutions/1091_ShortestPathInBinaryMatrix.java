@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1091_ShortestPathInBinaryMatrix {
+class _1091_ShortestPathInBinaryMatrix {
     // TODO: Implement Shortest Path in Binary Matrix algorithm
     public void solve() {
         // Core pattern: BFS (Grid)

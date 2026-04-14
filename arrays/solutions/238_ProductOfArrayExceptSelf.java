@@ -3,7 +3,7 @@
  * Difficulty: Medium
  * Pattern: Prefix Sum
  */
-public class _238_ProductOfArrayExceptSelf {
+class _238_ProductOfArrayExceptSelf {
     public int[] productExceptSelf(int[] nums) {
         int n = nums.length;
         int[] res = new int[n];

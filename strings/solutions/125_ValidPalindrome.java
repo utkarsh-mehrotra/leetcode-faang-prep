@@ -3,7 +3,7 @@
  * Difficulty: Easy
  * Pattern: Two Pointers
  */
-public class _125_ValidPalindrome {
+class _125_ValidPalindrome {
     public boolean isPalindrome(String s) {
         int l = 0, r = s.length() - 1;
         while (l < r) {

@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1714_HeapPriorityQueueOperationsVariation14 {
+class _1714_HeapPriorityQueueOperationsVariation14 {
     // TODO: Implement Heap priority queue Operations Variation 14 algorithm
     public void solve() {
         // Core pattern: Two Heaps

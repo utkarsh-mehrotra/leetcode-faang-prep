@@ -3,7 +3,7 @@
  * Difficulty: Easy
  * Pattern: DFS
  */
-public class _100_SameTree {
+class _100_SameTree {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if (p == null && q == null) return true;
         if (p == null || q == null || p.val != q.val) return false;

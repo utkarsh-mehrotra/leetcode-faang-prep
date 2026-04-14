@@ -24,7 +24,7 @@
  * Interviewers expect you to immediately recognise the recurrence
  * and then optimise space from O(N) → O(1).
  */
-public class _070_ClimbingStairs {
+class _070_ClimbingStairs {
 
     // ── Approach 1: Space-Optimised DP — O(1) space (preferred in interviews) ─
     public int climbStairs(int n) {

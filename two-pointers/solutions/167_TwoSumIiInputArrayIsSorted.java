@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _167_TwoSumIiInputArrayIsSorted {
+class _167_TwoSumIiInputArrayIsSorted {
     // TODO: Implement Two Sum II - Input Array Is Sorted algorithm
     public void solve() {
         // Core pattern: Two Pointers

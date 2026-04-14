@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _074_SearchA2dMatrix {
+class _074_SearchA2dMatrix {
     // TODO: Implement Search a 2D Matrix algorithm
     public void solve() {
         // Core pattern: Binary Search

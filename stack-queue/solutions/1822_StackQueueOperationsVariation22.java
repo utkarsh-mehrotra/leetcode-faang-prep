@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1822_StackQueueOperationsVariation22 {
+class _1822_StackQueueOperationsVariation22 {
     // TODO: Implement Stack queue Operations Variation 22 algorithm
     public void solve() {
         // Core pattern: Expression Parsing

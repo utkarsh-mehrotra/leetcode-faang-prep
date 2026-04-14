@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _005_LongestPalindromicSubstring {
+class _005_LongestPalindromicSubstring {
     // TODO: Implement Longest Palindromic Substring algorithm
     public void solve() {
         // Core pattern: 2D DP / Expand Around Centre

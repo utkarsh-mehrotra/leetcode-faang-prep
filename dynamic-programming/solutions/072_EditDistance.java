@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _072_EditDistance {
+class _072_EditDistance {
     // TODO: Implement Edit Distance algorithm
     public void solve() {
         // Core pattern: LCS / String DP

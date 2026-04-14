@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1821_StackQueueOperationsVariation21 {
+class _1821_StackQueueOperationsVariation21 {
     // TODO: Implement Stack queue Operations Variation 21 algorithm
     public void solve() {
         // Core pattern: Monotonic Stack

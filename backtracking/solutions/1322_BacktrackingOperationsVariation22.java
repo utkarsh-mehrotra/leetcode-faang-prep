@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1322_BacktrackingOperationsVariation22 {
+class _1322_BacktrackingOperationsVariation22 {
     // TODO: Implement Backtracking Operations Variation 22 algorithm
     public void solve() {
         // Core pattern: Subsets

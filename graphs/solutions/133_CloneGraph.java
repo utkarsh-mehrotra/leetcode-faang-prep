@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _133_CloneGraph {
+class _133_CloneGraph {
     // TODO: Implement Clone Graph algorithm
     public void solve() {
         // Core pattern: BFS / DFS

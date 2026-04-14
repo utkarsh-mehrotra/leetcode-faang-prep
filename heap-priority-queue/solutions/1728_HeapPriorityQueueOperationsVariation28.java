@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1728_HeapPriorityQueueOperationsVariation28 {
+class _1728_HeapPriorityQueueOperationsVariation28 {
     // TODO: Implement Heap priority queue Operations Variation 28 algorithm
     public void solve() {
         // Core pattern: Min Heap

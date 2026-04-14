@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _994_RottingOranges {
+class _994_RottingOranges {
     // TODO: Implement Rotting Oranges algorithm
     public void solve() {
         // Core pattern: Multi-Source BFS

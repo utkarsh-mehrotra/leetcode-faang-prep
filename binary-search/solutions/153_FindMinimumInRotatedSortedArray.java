@@ -3,7 +3,7 @@
  * Difficulty: Medium
  * Pattern: Binary Search (Rotated)
  */
-public class _153_FindMinimumInRotatedSortedArray {
+class _153_FindMinimumInRotatedSortedArray {
     public int findMin(int[] nums) {
         int l = 0, r = nums.length - 1;
         while (l < r) {

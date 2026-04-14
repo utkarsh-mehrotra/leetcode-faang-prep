@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1530_TwoPointersOperationsVariation30 {
+class _1530_TwoPointersOperationsVariation30 {
     // TODO: Implement Two pointers Operations Variation 30 algorithm
     public void solve() {
         // Core pattern: Merging

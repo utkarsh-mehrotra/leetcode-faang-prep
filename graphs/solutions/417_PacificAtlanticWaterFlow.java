@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _417_PacificAtlanticWaterFlow {
+class _417_PacificAtlanticWaterFlow {
     // TODO: Implement Pacific Atlantic Water Flow algorithm
     public void solve() {
         // Core pattern: Multi-Source DFS/BFS

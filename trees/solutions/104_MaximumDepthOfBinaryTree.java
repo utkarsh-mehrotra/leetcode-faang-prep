@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _104_MaximumDepthOfBinaryTree {
+class _104_MaximumDepthOfBinaryTree {
     // TODO: Implement Maximum Depth of Binary Tree algorithm
     public void solve() {
         // Core pattern: DFS / BFS

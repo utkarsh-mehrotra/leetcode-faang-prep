@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1107_StringsOperationsVariation7 {
+class _1107_StringsOperationsVariation7 {
     // TODO: Implement Strings Operations Variation 7 algorithm
     public void solve() {
         // Core pattern: Pattern Matching

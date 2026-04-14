@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1723_HeapPriorityQueueOperationsVariation23 {
+class _1723_HeapPriorityQueueOperationsVariation23 {
     // TODO: Implement Heap priority queue Operations Variation 23 algorithm
     public void solve() {
         // Core pattern: K-way Merge

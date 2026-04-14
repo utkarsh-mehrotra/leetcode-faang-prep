@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1524_TwoPointersOperationsVariation24 {
+class _1524_TwoPointersOperationsVariation24 {
     // TODO: Implement Two pointers Operations Variation 24 algorithm
     public void solve() {
         // Core pattern: Opposite Ends

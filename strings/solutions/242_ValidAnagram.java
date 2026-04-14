@@ -3,7 +3,7 @@
  * Difficulty: Easy
  * Pattern: Frequency Array
  */
-public class _242_ValidAnagram {
+class _242_ValidAnagram {
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) return false;
         int[] counts = new int[26];

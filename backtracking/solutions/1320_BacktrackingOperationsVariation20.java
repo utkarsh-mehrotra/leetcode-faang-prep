@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1320_BacktrackingOperationsVariation20 {
+class _1320_BacktrackingOperationsVariation20 {
     // TODO: Implement Backtracking Operations Variation 20 algorithm
     public void solve() {
         // Core pattern: Combinations

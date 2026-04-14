@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1818_StackQueueOperationsVariation18 {
+class _1818_StackQueueOperationsVariation18 {
     // TODO: Implement Stack queue Operations Variation 18 algorithm
     public void solve() {
         // Core pattern: Monotonic Stack

@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1029_ArraysOperationsVariation29 {
+class _1029_ArraysOperationsVariation29 {
     // TODO: Implement Arrays Operations Variation 29 algorithm
     public void solve() {
         // Core pattern: Sorting

@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _416_PartitionEqualSubsetSum {
+class _416_PartitionEqualSubsetSum {
     // TODO: Implement Partition Equal Subset Sum algorithm
     public void solve() {
         // Core pattern: 0/1 Knapsack

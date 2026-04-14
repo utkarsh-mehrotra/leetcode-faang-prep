@@ -5,7 +5,7 @@
  */
 import java.util.*;
 
-public class _049_GroupAnagrams {
+class _049_GroupAnagrams {
     public List<List<String>> groupAnagrams(String[] strs) {
         Map<String, List<String>> map = new HashMap<>();
         for (String s : strs) {

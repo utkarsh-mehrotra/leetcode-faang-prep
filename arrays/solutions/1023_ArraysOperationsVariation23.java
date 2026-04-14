@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1023_ArraysOperationsVariation23 {
+class _1023_ArraysOperationsVariation23 {
     // TODO: Implement Arrays Operations Variation 23 algorithm
     public void solve() {
         // Core pattern: Matrix

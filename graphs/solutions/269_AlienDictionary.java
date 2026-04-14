@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _269_AlienDictionary {
+class _269_AlienDictionary {
     // TODO: Implement Alien Dictionary algorithm
     public void solve() {
         // Core pattern: Topological Sort

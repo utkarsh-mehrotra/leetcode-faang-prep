@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _139_WordBreak {
+class _139_WordBreak {
     // TODO: Implement Word Break algorithm
     public void solve() {
         // Core pattern: 1D DP (String Segmentation)

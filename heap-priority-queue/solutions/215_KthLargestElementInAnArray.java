@@ -5,7 +5,7 @@
  */
 import java.util.*;
 
-public class _215_KthLargestElementInAnArray {
+class _215_KthLargestElementInAnArray {
     public int findKthLargest(int[] nums, int k) {
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
         for (int n : nums) {

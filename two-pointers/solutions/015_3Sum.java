@@ -5,7 +5,7 @@
  */
 import java.util.*;
 
-public class _015_3Sum {
+class _015_3Sum {
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer>> res = new ArrayList<>();

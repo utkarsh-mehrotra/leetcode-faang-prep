@@ -5,7 +5,7 @@
  */
 import java.util.*;
 
-public class _150_EvaluateReversePolishNotation {
+class _150_EvaluateReversePolishNotation {
     public int evalRPN(String[] tokens) {
         Stack<Integer> stack = new Stack<>();
         for (String t : tokens) {

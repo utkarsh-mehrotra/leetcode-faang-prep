@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _494_TargetSum {
+class _494_TargetSum {
     // TODO: Implement Target Sum algorithm
     public void solve() {
         // Core pattern: 0/1 Knapsack (Count)

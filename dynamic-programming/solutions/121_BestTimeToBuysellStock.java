@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _121_BestTimeToBuysellStock {
+class _121_BestTimeToBuysellStock {
     // TODO: Implement Best Time to Buy/Sell Stock algorithm
     public void solve() {
         // Core pattern: 1D DP / Greedy

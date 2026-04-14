@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1315_BacktrackingOperationsVariation15 {
+class _1315_BacktrackingOperationsVariation15 {
     // TODO: Implement Backtracking Operations Variation 15 algorithm
     public void solve() {
         // Core pattern: Path Finding

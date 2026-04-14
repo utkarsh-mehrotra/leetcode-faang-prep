@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _207_CourseSchedule {
+class _207_CourseSchedule {
     // TODO: Implement Course Schedule algorithm
     public void solve() {
         // Core pattern: Topological Sort (DFS)

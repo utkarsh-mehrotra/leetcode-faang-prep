@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1527_TwoPointersOperationsVariation27 {
+class _1527_TwoPointersOperationsVariation27 {
     // TODO: Implement Two pointers Operations Variation 27 algorithm
     public void solve() {
         // Core pattern: Partitioning

@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _261_GraphValidTree {
+class _261_GraphValidTree {
     // TODO: Implement Graph Valid Tree algorithm
     public void solve() {
         // Core pattern: Union-Find / BFS

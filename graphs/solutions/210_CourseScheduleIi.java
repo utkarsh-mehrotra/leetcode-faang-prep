@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _210_CourseScheduleIi {
+class _210_CourseScheduleIi {
     // TODO: Implement Course Schedule II algorithm
     public void solve() {
         // Core pattern: Topological Sort (Kahn)

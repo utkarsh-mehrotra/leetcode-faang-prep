@@ -3,7 +3,7 @@
  * Difficulty: Easy
  * Pattern: DFS / BFS
  */
-public class _226_InvertBinaryTree {
+class _226_InvertBinaryTree {
     public TreeNode invertTree(TreeNode root) {
         if (root == null) return null;
         TreeNode temp = root.left;

@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _188_BestTimeToBuysellStockIv {
+class _188_BestTimeToBuysellStockIv {
     // TODO: Implement Best Time to Buy/Sell Stock IV algorithm
     public void solve() {
         // Core pattern: State Machine DP (K txns)

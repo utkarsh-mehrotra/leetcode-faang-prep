@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _300_LongestIncreasingSubsequence {
+class _300_LongestIncreasingSubsequence {
     // TODO: Implement Longest Increasing Subsequence algorithm
     public void solve() {
         // Core pattern: LIS (DP / Binary Search)

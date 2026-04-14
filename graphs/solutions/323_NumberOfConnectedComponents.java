@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _323_NumberOfConnectedComponents {
+class _323_NumberOfConnectedComponents {
     // TODO: Implement Number of Connected Components algorithm
     public void solve() {
         // Core pattern: Union-Find / DFS

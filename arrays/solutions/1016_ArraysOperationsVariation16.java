@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1016_ArraysOperationsVariation16 {
+class _1016_ArraysOperationsVariation16 {
     // TODO: Implement Arrays Operations Variation 16 algorithm
     public void solve() {
         // Core pattern: Prefix Sum

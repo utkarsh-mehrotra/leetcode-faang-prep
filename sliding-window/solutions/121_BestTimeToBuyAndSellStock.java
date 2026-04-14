@@ -3,7 +3,7 @@
  * Difficulty: Easy
  * Pattern: Sliding Window (Two Pointers)
  */
-public class _121_BestTimeToBuyAndSellStock {
+class _121_BestTimeToBuyAndSellStock {
     public int maxProfit(int[] prices) {
         int maxProfit = 0;
         int minPrice = Integer.MAX_VALUE;

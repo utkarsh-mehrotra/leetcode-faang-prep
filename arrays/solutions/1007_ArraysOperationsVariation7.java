@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1007_ArraysOperationsVariation7 {
+class _1007_ArraysOperationsVariation7 {
     // TODO: Implement Arrays Operations Variation 7 algorithm
     public void solve() {
         // Core pattern: Kadane's

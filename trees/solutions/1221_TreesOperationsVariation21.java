@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1221_TreesOperationsVariation21 {
+class _1221_TreesOperationsVariation21 {
     // TODO: Implement Trees Operations Variation 21 algorithm
     public void solve() {
         // Core pattern: BFS

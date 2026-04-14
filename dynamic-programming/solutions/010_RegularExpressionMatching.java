@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _010_RegularExpressionMatching {
+class _010_RegularExpressionMatching {
     // TODO: Implement Regular Expression Matching algorithm
     public void solve() {
         // Core pattern: 2D String DP

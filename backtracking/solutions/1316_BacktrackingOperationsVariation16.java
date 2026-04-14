@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1316_BacktrackingOperationsVariation16 {
+class _1316_BacktrackingOperationsVariation16 {
     // TODO: Implement Backtracking Operations Variation 16 algorithm
     public void solve() {
         // Core pattern: Combinations

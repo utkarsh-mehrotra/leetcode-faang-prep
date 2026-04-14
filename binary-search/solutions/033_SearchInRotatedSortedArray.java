@@ -3,7 +3,7 @@
  * Difficulty: Medium
  * Pattern: Binary Search (Rotated)
  */
-public class _033_SearchInRotatedSortedArray {
+class _033_SearchInRotatedSortedArray {
     public int search(int[] nums, int target) {
         int l = 0, r = nums.length - 1;
         while (l <= r) {

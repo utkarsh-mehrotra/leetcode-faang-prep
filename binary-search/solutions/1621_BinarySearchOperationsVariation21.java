@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1621_BinarySearchOperationsVariation21 {
+class _1621_BinarySearchOperationsVariation21 {
     // TODO: Implement Binary search Operations Variation 21 algorithm
     public void solve() {
         // Core pattern: BS on Answer

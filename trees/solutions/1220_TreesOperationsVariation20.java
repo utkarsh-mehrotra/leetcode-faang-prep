@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1220_TreesOperationsVariation20 {
+class _1220_TreesOperationsVariation20 {
     // TODO: Implement Trees Operations Variation 20 algorithm
     public void solve() {
         // Core pattern: DFS

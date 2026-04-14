@@ -3,7 +3,7 @@
  * Difficulty: Medium
  * Pattern: DFS / Backtracking
  */
-public class _079_WordSearch {
+class _079_WordSearch {
     public boolean exist(char[][] board, String word) {
         for (int r = 0; r < board.length; r++) {
             for (int c = 0; c < board[0].length; c++) {

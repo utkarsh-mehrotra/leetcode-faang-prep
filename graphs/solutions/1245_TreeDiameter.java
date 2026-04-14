@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1245_TreeDiameter {
+class _1245_TreeDiameter {
     // TODO: Implement Tree Diameter algorithm
     public void solve() {
         // Core pattern: DFS (Tree)

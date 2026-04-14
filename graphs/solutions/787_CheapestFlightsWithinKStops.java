@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _787_CheapestFlightsWithinKStops {
+class _787_CheapestFlightsWithinKStops {
     // TODO: Implement Cheapest Flights Within K Stops algorithm
     public void solve() {
         // Core pattern: Bellman-Ford / BFS

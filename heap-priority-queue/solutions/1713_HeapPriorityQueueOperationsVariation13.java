@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1713_HeapPriorityQueueOperationsVariation13 {
+class _1713_HeapPriorityQueueOperationsVariation13 {
     // TODO: Implement Heap priority queue Operations Variation 13 algorithm
     public void solve() {
         // Core pattern: Max Heap

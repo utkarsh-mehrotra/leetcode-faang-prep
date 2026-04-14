@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1192_CriticalConnectionsInANetwork {
+class _1192_CriticalConnectionsInANetwork {
     // TODO: Implement Critical Connections in a Network algorithm
     public void solve() {
         // Core pattern: Tarjan's (Bridges)

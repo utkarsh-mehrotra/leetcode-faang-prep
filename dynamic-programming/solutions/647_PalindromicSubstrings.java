@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _647_PalindromicSubstrings {
+class _647_PalindromicSubstrings {
     // TODO: Implement Palindromic Substrings algorithm
     public void solve() {
         // Core pattern: 2D DP / Expand Around Centre

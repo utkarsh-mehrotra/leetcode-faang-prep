@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1421_SlidingWindowOperationsVariation21 {
+class _1421_SlidingWindowOperationsVariation21 {
     // TODO: Implement Sliding window Operations Variation 21 algorithm
     public void solve() {
         // Core pattern: Variable Window

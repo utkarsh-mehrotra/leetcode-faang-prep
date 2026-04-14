@@ -5,7 +5,7 @@
  */
 import java.util.PriorityQueue;
 
-public class _1046_LastStoneWeight {
+class _1046_LastStoneWeight {
     public int lastStoneWeight(int[] stones) {
         PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> b - a);
         for (int stone : stones) pq.offer(stone);

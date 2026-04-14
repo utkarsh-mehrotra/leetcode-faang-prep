@@ -3,7 +3,7 @@
  * Difficulty: Medium
  * Pattern: Prefix/Suffix
  */
-public class _152_MaximumProductSubarray {
+class _152_MaximumProductSubarray {
     public int maxProduct(int[] nums) {
         int res = nums[0];
         int l = 0, r = 0, n = nums.length;

@@ -3,7 +3,7 @@
  * Difficulty: Medium
  * Pattern: Kadane's Algorithm
  */
-public class _053_MaximumSubarray {
+class _053_MaximumSubarray {
     public int maxSubArray(int[] nums) {
         int maxSum = nums[0];
         int currSum = 0;

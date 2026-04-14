@@ -33,7 +33,7 @@
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class _200_NumberOfIslands {
+class _200_NumberOfIslands {
 
     // ── Approach 1: DFS (recursive, in-place marking) ─────────────────────────
     // Mark visited cells as '#' to avoid an extra visited array.

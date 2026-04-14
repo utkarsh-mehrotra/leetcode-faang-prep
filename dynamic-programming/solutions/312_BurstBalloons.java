@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _312_BurstBalloons {
+class _312_BurstBalloons {
     // TODO: Implement Burst Balloons algorithm
     public void solve() {
         // Core pattern: Interval DP

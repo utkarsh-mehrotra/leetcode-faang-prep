@@ -3,7 +3,7 @@
  * Difficulty: Hard
  * Pattern: Two Pointers
  */
-public class _042_TrappingRainWater {
+class _042_TrappingRainWater {
     public int trap(int[] height) {
         int l = 0, r = height.length - 1;
         int lMax = 0, rMax = 0, res = 0;

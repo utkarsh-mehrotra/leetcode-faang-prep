@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1807_StackQueueOperationsVariation7 {
+class _1807_StackQueueOperationsVariation7 {
     // TODO: Implement Stack queue Operations Variation 7 algorithm
     public void solve() {
         // Core pattern: Expression Parsing

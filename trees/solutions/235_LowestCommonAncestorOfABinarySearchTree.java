@@ -3,7 +3,7 @@
  * Difficulty: Medium
  * Pattern: BST Traversal
  */
-public class _235_LowestCommonAncestorOfABinarySearchTree {
+class _235_LowestCommonAncestorOfABinarySearchTree {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         while (root != null) {
             if (p.val < root.val && q.val < root.val) root = root.left;

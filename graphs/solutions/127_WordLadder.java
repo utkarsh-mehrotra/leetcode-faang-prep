@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _127_WordLadder {
+class _127_WordLadder {
     // TODO: Implement Word Ladder algorithm
     public void solve() {
         // Core pattern: BFS (Implicit Graph)

@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1024_ArraysOperationsVariation24 {
+class _1024_ArraysOperationsVariation24 {
     // TODO: Implement Arrays Operations Variation 24 algorithm
     public void solve() {
         // Core pattern: Sorting

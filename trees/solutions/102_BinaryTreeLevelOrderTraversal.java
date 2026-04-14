@@ -5,7 +5,7 @@
  */
 import java.util.*;
 
-public class _102_BinaryTreeLevelOrderTraversal {
+class _102_BinaryTreeLevelOrderTraversal {
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
         if (root == null) return res;

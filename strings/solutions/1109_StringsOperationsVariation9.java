@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1109_StringsOperationsVariation9 {
+class _1109_StringsOperationsVariation9 {
     // TODO: Implement Strings Operations Variation 9 algorithm
     public void solve() {
         // Core pattern: Two Pointers

@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1610_BinarySearchOperationsVariation10 {
+class _1610_BinarySearchOperationsVariation10 {
     // TODO: Implement Binary search Operations Variation 10 algorithm
     public void solve() {
         // Core pattern: Rotated Array

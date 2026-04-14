@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1209_TreesOperationsVariation9 {
+class _1209_TreesOperationsVariation9 {
     // TODO: Implement Trees Operations Variation 9 algorithm
     public void solve() {
         // Core pattern: Pre-order

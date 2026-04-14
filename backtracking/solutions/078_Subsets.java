@@ -5,7 +5,7 @@
  */
 import java.util.*;
 
-public class _078_Subsets {
+class _078_Subsets {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         backtrack(nums, 0, new ArrayList<>(), res);

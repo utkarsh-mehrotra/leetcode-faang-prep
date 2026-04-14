@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _091_DecodeWays {
+class _091_DecodeWays {
     // TODO: Implement Decode Ways algorithm
     public void solve() {
         // Core pattern: 1D DP (String)

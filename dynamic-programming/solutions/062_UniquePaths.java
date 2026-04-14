@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _062_UniquePaths {
+class _062_UniquePaths {
     // TODO: Implement Unique Paths algorithm
     public void solve() {
         // Core pattern: 2D Grid DP

@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1710_HeapPriorityQueueOperationsVariation10 {
+class _1710_HeapPriorityQueueOperationsVariation10 {
     // TODO: Implement Heap priority queue Operations Variation 10 algorithm
     public void solve() {
         // Core pattern: Two Heaps

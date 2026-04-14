@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1623_BinarySearchOperationsVariation23 {
+class _1623_BinarySearchOperationsVariation23 {
     // TODO: Implement Binary search Operations Variation 23 algorithm
     public void solve() {
         // Core pattern: Matrix Search

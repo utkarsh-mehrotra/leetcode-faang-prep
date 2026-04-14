@@ -3,7 +3,7 @@
  * Difficulty: Medium
  * Pattern: Two Pointers
  */
-public class _167_TwoSumII {
+class _167_TwoSumII {
     public int[] twoSum(int[] numbers, int target) {
         int l = 0, r = numbers.length - 1;
         while (l < r) {

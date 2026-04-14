@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _115_DistinctSubsequences {
+class _115_DistinctSubsequences {
     // TODO: Implement Distinct Subsequences algorithm
     public void solve() {
         // Core pattern: 2D String DP (Count)

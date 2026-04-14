@@ -3,7 +3,7 @@
  * Difficulty: Medium
  * Pattern: Binary Search
  */
-public class _074_Search2DMatrix {
+class _074_Search2DMatrix {
     public boolean searchMatrix(int[][] matrix, int target) {
         if (matrix.length == 0) return false;
         int m = matrix.length, n = matrix[0].length;

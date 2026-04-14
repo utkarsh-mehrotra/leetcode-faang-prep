@@ -3,7 +3,7 @@
  * Difficulty: Medium
  * Pattern: Sliding Window
  */
-public class _424_LongestRepeatingCharacterReplacement {
+class _424_LongestRepeatingCharacterReplacement {
     public int characterReplacement(String s, int k) {
         int[] counts = new int[26];
         int maxf = 0, l = 0, res = 0;

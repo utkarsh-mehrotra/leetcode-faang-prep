@@ -5,7 +5,7 @@
  */
 import java.util.PriorityQueue;
 
-public class _703_KthLargestElementInAStream {
+class _703_KthLargestElementInAStream {
     private PriorityQueue<Integer> minHeap;
     private int k;
 

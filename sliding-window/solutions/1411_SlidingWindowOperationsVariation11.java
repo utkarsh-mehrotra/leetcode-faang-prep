@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1411_SlidingWindowOperationsVariation11 {
+class _1411_SlidingWindowOperationsVariation11 {
     // TODO: Implement Sliding window Operations Variation 11 algorithm
     public void solve() {
         // Core pattern: Hash Map state

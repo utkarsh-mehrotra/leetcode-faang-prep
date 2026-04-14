@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1334_FindTheCityWithSmallestNeighbors {
+class _1334_FindTheCityWithSmallestNeighbors {
     // TODO: Implement Find the City With Smallest Neighbors algorithm
     public void solve() {
         // Core pattern: Floyd-Warshall

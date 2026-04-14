@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1826_StackQueueOperationsVariation26 {
+class _1826_StackQueueOperationsVariation26 {
     // TODO: Implement Stack queue Operations Variation 26 algorithm
     public void solve() {
         // Core pattern: Matrix/Grid tracking

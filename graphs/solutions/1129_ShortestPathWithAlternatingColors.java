@@ -5,7 +5,7 @@
  * 
  * Auto-generated blueprint.
  */
-public class _1129_ShortestPathWithAlternatingColors {
+class _1129_ShortestPathWithAlternatingColors {
     // TODO: Implement Shortest Path with Alternating Colors algorithm
     public void solve() {
         // Core pattern: BFS (State)
