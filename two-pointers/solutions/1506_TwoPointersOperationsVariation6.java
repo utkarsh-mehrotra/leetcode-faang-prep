@@ -1,17 +1,15 @@
-/**
- * 1506. Two pointers Operations Variation 6
- * Difficulty: Easy
- * Pattern: Merging
- * 
- * Auto-generated blueprint.
- */
 class _1506_TwoPointersOperationsVariation6 {
-    // TODO: Implement Two pointers Operations Variation 6 algorithm
-    public void solve() {
-        // Core pattern: Merging
+    public int[] solve(int[] nums) {
+        // Sort Array By Parity (Even then Odd)
+        int L = 0, R = nums.length - 1;
+        while (L < R) {
+            if (nums[L] % 2 > nums[R] % 2) {
+                int temp = nums[L]; nums[L] = nums[R]; nums[R] = temp;
+            }
+            if (nums[L] % 2 == 0) L++;
+            if (nums[R] % 2 != 0) R--;
+        }
+        return nums;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Two pointers Operations Variation 6 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

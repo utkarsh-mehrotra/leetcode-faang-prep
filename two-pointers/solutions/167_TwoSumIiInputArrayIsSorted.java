@@ -1,17 +1,13 @@
-/**
- * 167. Two Sum II - Input Array Is Sorted
- * Difficulty: Medium
- * Pattern: Two Pointers
- * 
- * Auto-generated blueprint.
- */
 class _167_TwoSumIiInputArrayIsSorted {
-    // TODO: Implement Two Sum II - Input Array Is Sorted algorithm
-    public void solve() {
-        // Core pattern: Two Pointers
+    public int[] solve(int[] numbers, int target) {
+        int L = 0, R = numbers.length - 1;
+        while (L < R) {
+            int sum = numbers[L] + numbers[R];
+            if (sum == target) return new int[]{L + 1, R + 1};
+            else if (sum < target) L++;
+            else R--;
+        }
+        return new int[0];
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Two Sum II - Input Array Is Sorted template loaded.");
-    }
+    public static void main(String[] args) {}
 }

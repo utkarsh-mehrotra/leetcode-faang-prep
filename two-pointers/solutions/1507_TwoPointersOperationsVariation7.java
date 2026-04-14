@@ -1,17 +1,11 @@
-/**
- * 1507. Two pointers Operations Variation 7
- * Difficulty: Medium
- * Pattern: Partitioning
- * 
- * Auto-generated blueprint.
- */
 class _1507_TwoPointersOperationsVariation7 {
-    // TODO: Implement Two pointers Operations Variation 7 algorithm
-    public void solve() {
-        // Core pattern: Partitioning
+    public int solve(int[] nums) {
+        // Remove Duplicates from Sorted Array II (At most twice)
+        int i = 0;
+        for (int n : nums) {
+            if (i < 2 || n > nums[i-2]) nums[i++] = n;
+        }
+        return i;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Two pointers Operations Variation 7 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

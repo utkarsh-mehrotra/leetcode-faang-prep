@@ -1,17 +1,14 @@
-/**
- * 1511. Two pointers Operations Variation 11
- * Difficulty: Medium
- * Pattern: Partitioning
- * 
- * Auto-generated blueprint.
- */
 class _1511_TwoPointersOperationsVariation11 {
-    // TODO: Implement Two pointers Operations Variation 11 algorithm
-    public void solve() {
-        // Core pattern: Partitioning
+    public int solve(int[] nums, int val) {
+        // Remove Element In-Place
+        int i = 0;
+        for (int j = 0; j < nums.length; j++) {
+            if (nums[j] != val) {
+                nums[i] = nums[j];
+                i++;
+            }
+        }
+        return i;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Two pointers Operations Variation 11 template loaded.");
-    }
+    public static void main(String[] args) {}
 }
