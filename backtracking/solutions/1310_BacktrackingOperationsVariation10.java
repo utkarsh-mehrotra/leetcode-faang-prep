@@ -1,17 +1,18 @@
-/**
- * 1310. Backtracking Operations Variation 10
- * Difficulty: Medium
- * Pattern: Subsets
- * 
- * Auto-generated blueprint.
- */
+import java.util.*;
 class _1310_BacktrackingOperationsVariation10 {
-    // TODO: Implement Backtracking Operations Variation 10 algorithm
-    public void solve() {
-        // Core pattern: Subsets
+    public List<String> solve(int n) {
+        // Generate Parentheses
+        List<String> res = new ArrayList<>();
+        backtrack(res, "", 0, 0, n);
+        return res;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Backtracking Operations Variation 10 template loaded.");
+    private void backtrack(List<String> res, String current, int open, int close, int max) {
+        if (current.length() == max * 2) {
+            res.add(current);
+            return;
+        }
+        if (open < max) backtrack(res, current + "(", open+1, close, max);
+        if (close < open) backtrack(res, current + ")", open, close+1, max);
     }
+    public static void main(String[] args) {}
 }

@@ -1,17 +1,19 @@
-/**
- * 1318. Backtracking Operations Variation 18
- * Difficulty: Easy
- * Pattern: Subsets
- * 
- * Auto-generated blueprint.
- */
+import java.util.*;
 class _1318_BacktrackingOperationsVariation18 {
-    // TODO: Implement Backtracking Operations Variation 18 algorithm
-    public void solve() {
-        // Core pattern: Subsets
+    public List<String> solve(String S) {
+        // Letter Case Permutation
+        List<String> res = new ArrayList<>();
+        backtrack(res, S.toCharArray(), 0);
+        return res;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Backtracking Operations Variation 18 template loaded.");
+    private void backtrack(List<String> res, char[] chars, int idx) {
+        if (idx == chars.length) { res.add(new String(chars)); return; }
+        if (Character.isLetter(chars[idx])) {
+            chars[idx] = Character.toUpperCase(chars[idx]);
+            backtrack(res, chars, idx+1);
+            chars[idx] = Character.toLowerCase(chars[idx]);
+            backtrack(res, chars, idx+1);
+        } else backtrack(res, chars, idx+1);
     }
+    public static void main(String[] args) {}
 }
