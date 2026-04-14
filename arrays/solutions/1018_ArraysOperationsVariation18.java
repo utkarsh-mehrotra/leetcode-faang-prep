@@ -1,17 +1,16 @@
-/**
- * 1018. Arrays Operations Variation 18
- * Difficulty: Easy
- * Pattern: Matrix
- * 
- * Auto-generated blueprint.
- */
 class _1018_ArraysOperationsVariation18 {
-    // TODO: Implement Arrays Operations Variation 18 algorithm
-    public void solve() {
-        // Core pattern: Matrix
+    public int[] solve(int[] nums) {
+        // Product of Array Except Self
+        int n = nums.length;
+        int[] res = new int[n];
+        res[0] = 1;
+        for (int i = 1; i < n; i++) res[i] = res[i - 1] * nums[i - 1];
+        int right = 1;
+        for (int i = n - 1; i >= 0; i--) {
+            res[i] *= right;
+            right *= nums[i];
+        }
+        return res;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Arrays Operations Variation 18 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

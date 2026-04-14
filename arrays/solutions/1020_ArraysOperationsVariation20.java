@@ -1,17 +1,18 @@
-/**
- * 1020. Arrays Operations Variation 20
- * Difficulty: Medium
- * Pattern: Hash Map
- * 
- * Auto-generated blueprint.
- */
+import java.util.*;
 class _1020_ArraysOperationsVariation20 {
-    // TODO: Implement Arrays Operations Variation 20 algorithm
-    public void solve() {
-        // Core pattern: Hash Map
+    public int solve(int[] nums) {
+        // Longest Consecutive Sequence
+        Set<Integer> set = new HashSet<>();
+        for (int n : nums) set.add(n);
+        int longest = 0;
+        for (int n : set) {
+            if (!set.contains(n - 1)) {
+                int length = 0;
+                while (set.contains(n + length)) length++;
+                longest = Math.max(longest, length);
+            }
+        }
+        return longest;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Arrays Operations Variation 20 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

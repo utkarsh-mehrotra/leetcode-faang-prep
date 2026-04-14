@@ -1,17 +1,12 @@
-/**
- * 1009. Arrays Operations Variation 9
- * Difficulty: Easy
- * Pattern: Sorting
- * 
- * Auto-generated blueprint.
- */
 class _1009_ArraysOperationsVariation9 {
-    // TODO: Implement Arrays Operations Variation 9 algorithm
-    public void solve() {
-        // Core pattern: Sorting
+    public int[] solve(int[] nums) {
+        // Prefix Sum Template
+        int n = nums.length;
+        int[] prefix = new int[n + 1];
+        for (int i = 0; i < n; i++) {
+            prefix[i + 1] = prefix[i] + nums[i];
+        }
+        return prefix;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Arrays Operations Variation 9 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

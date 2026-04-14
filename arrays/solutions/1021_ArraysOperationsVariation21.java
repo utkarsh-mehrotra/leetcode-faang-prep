@@ -1,17 +1,15 @@
-/**
- * 1021. Arrays Operations Variation 21
- * Difficulty: Easy
- * Pattern: Prefix Sum
- * 
- * Auto-generated blueprint.
- */
 class _1021_ArraysOperationsVariation21 {
-    // TODO: Implement Arrays Operations Variation 21 algorithm
-    public void solve() {
-        // Core pattern: Prefix Sum
+    public int solve(int[] nums) {
+        // Remove Duplicates from Sorted Array
+        if (nums.length == 0) return 0;
+        int L = 1;
+        for (int R = 1; R < nums.length; R++) {
+            if (nums[R] != nums[R - 1]) {
+                nums[L] = nums[R];
+                L++;
+            }
+        }
+        return L;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Arrays Operations Variation 21 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

@@ -1,17 +1,14 @@
-/**
- * 1022. Arrays Operations Variation 22
- * Difficulty: Medium
- * Pattern: Kadane's
- * 
- * Auto-generated blueprint.
- */
 class _1022_ArraysOperationsVariation22 {
-    // TODO: Implement Arrays Operations Variation 22 algorithm
-    public void solve() {
-        // Core pattern: Kadane's
+    public int solve(int[] height) {
+        // Container With Most Water
+        int max = 0;
+        int L = 0, R = height.length - 1;
+        while (L < R) {
+            max = Math.max(max, (R - L) * Math.min(height[L], height[R]));
+            if (height[L] < height[R]) L++;
+            else R--;
+        }
+        return max;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Arrays Operations Variation 22 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

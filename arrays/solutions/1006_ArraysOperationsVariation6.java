@@ -1,17 +1,26 @@
-/**
- * 1006. Arrays Operations Variation 6
- * Difficulty: Easy
- * Pattern: Prefix Sum
- * 
- * Auto-generated blueprint.
- */
 class _1006_ArraysOperationsVariation6 {
-    // TODO: Implement Arrays Operations Variation 6 algorithm
-    public void solve() {
-        // Core pattern: Prefix Sum
+    public void solve(int[] nums) {
+        // QuickSort Template
+        quickSort(nums, 0, nums.length - 1);
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Arrays Operations Variation 6 template loaded.");
+    private void quickSort(int[] arr, int low, int high) {
+        if (low < high) {
+            int pi = partition(arr, low, high);
+            quickSort(arr, low, pi - 1);
+            quickSort(arr, pi + 1, high);
+        }
     }
+    private int partition(int[] arr, int low, int high) {
+        int pivot = arr[high];
+        int i = (low - 1);
+        for (int j = low; j < high; j++) {
+            if (arr[j] < pivot) {
+                i++;
+                int temp = arr[i]; arr[i] = arr[j]; arr[j] = temp;
+            }
+        }
+        int temp = arr[i + 1]; arr[i + 1] = arr[high]; arr[high] = temp;
+        return i + 1;
+    }
+    public static void main(String[] args) {}
 }

@@ -1,17 +1,13 @@
-/**
- * 1012. Arrays Operations Variation 12
- * Difficulty: Easy
- * Pattern: Kadane's
- * 
- * Auto-generated blueprint.
- */
 class _1012_ArraysOperationsVariation12 {
-    // TODO: Implement Arrays Operations Variation 12 algorithm
-    public void solve() {
-        // Core pattern: Kadane's
+    public void solve(int[] nums) {
+        // Two Pointers Reverse Array
+        int i = 0, j = nums.length - 1;
+        while (i < j) {
+            int temp = nums[i];
+            nums[i] = nums[j];
+            nums[j] = temp;
+            i++; j--;
+        }
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Arrays Operations Variation 12 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

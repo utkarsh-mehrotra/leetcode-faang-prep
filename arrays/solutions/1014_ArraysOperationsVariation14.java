@@ -1,17 +1,16 @@
-/**
- * 1014. Arrays Operations Variation 14
- * Difficulty: Medium
- * Pattern: Sorting
- * 
- * Auto-generated blueprint.
- */
 class _1014_ArraysOperationsVariation14 {
-    // TODO: Implement Arrays Operations Variation 14 algorithm
-    public void solve() {
-        // Core pattern: Sorting
+    public void solve(int[][] matrix) {
+        // Rotate Matrix 90 Degrees In-Place
+        int n = matrix.length;
+        for (int i = 0; i < n / 2; i++) {
+            for (int j = i; j < n - i - 1; j++) {
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[n - 1 - j][i];
+                matrix[n - 1 - j][i] = matrix[n - 1 - i][n - 1 - j];
+                matrix[n - 1 - i][n - 1 - j] = matrix[j][n - 1 - i];
+                matrix[j][n - 1 - i] = temp;
+            }
+        }
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Arrays Operations Variation 14 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

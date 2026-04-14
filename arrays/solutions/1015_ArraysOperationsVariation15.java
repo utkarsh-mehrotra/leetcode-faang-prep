@@ -1,17 +1,14 @@
-/**
- * 1015. Arrays Operations Variation 15
- * Difficulty: Hard
- * Pattern: Hash Map
- * 
- * Auto-generated blueprint.
- */
 class _1015_ArraysOperationsVariation15 {
-    // TODO: Implement Arrays Operations Variation 15 algorithm
-    public void solve() {
-        // Core pattern: Hash Map
+    public int solve(int[] nums) {
+        // Kadanes Algorithm
+        if (nums.length == 0) return 0;
+        int max = nums[0];
+        int curr = 0;
+        for(int n : nums) {
+            curr = Math.max(0, curr) + n;
+            max = Math.max(max, curr);
+        }
+        return max;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Arrays Operations Variation 15 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

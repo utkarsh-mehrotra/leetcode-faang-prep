@@ -1,17 +1,15 @@
-/**
- * 1019. Arrays Operations Variation 19
- * Difficulty: Medium
- * Pattern: Sorting
- * 
- * Auto-generated blueprint.
- */
 class _1019_ArraysOperationsVariation19 {
-    // TODO: Implement Arrays Operations Variation 19 algorithm
-    public void solve() {
-        // Core pattern: Sorting
+    public void solve(int[] nums) {
+        // Move Zeros to end
+        int l = 0;
+        for (int r = 0; r < nums.length; r++) {
+            if (nums[r] != 0) {
+                int temp = nums[l];
+                nums[l] = nums[r];
+                nums[r] = temp;
+                l++;
+            }
+        }
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Arrays Operations Variation 19 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

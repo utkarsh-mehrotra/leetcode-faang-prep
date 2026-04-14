@@ -1,17 +1,13 @@
-/**
- * 1026. Arrays Operations Variation 26
- * Difficulty: Medium
- * Pattern: Prefix Sum
- * 
- * Auto-generated blueprint.
- */
 class _1026_ArraysOperationsVariation26 {
-    // TODO: Implement Arrays Operations Variation 26 algorithm
-    public void solve() {
-        // Core pattern: Prefix Sum
+    public int solve(int[] nums) {
+        // Find Peak Element
+        int L = 0, R = nums.length - 1;
+        while (L < R) {
+            int mid = L + (R - L) / 2;
+            if (nums[mid] > nums[mid + 1]) R = mid;
+            else L = mid + 1;
+        }
+        return L;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Arrays Operations Variation 26 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

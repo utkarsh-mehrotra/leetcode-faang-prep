@@ -1,17 +1,13 @@
-/**
- * 1013. Arrays Operations Variation 13
- * Difficulty: Medium
- * Pattern: Matrix
- * 
- * Auto-generated blueprint.
- */
 class _1013_ArraysOperationsVariation13 {
-    // TODO: Implement Arrays Operations Variation 13 algorithm
-    public void solve() {
-        // Core pattern: Matrix
+    public int solve(int[] nums) {
+        // Boyer-Moore Majority Vote
+        int count = 0;
+        Integer candidate = null;
+        for (int num : nums) {
+            if (count == 0) candidate = num;
+            count += (num == candidate) ? 1 : -1;
+        }
+        return candidate;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Arrays Operations Variation 13 template loaded.");
-    }
+    public static void main(String[] args) {}
 }
