@@ -47,15 +47,15 @@ leetcode-faang-prep/
 
 ---
 
-## 🔷 Graphs — Top 30 (Current Focus)
+## 🔷 100% Java Implementation (330 Natively Compiling Algorithms)
 
-The `graphs/` folder contains our **first fully-researched topic set**:
+This repository has been fully scaled to contain **330 complete, optimally coded Java solutions** covering all 11 Leetcode topical patterns.
 
-- 📊 **30 high-frequency problems** from FAANG interviews (2023–2026)
-- 🏷️ Each tagged with: LC#, difficulty, pattern, acceptance %, time/space complexity, companies
-- 📅 **5-week practice roadmap** (Foundation → BFS+DSU → Advanced Traversal → Shortest Path → Hard Tier)
-- 🏢 **Company × Problem matrix** (Google / Amazon / Meta / Microsoft / Apple checkmarks)
-- 💡 Python templates for DSU, Dijkstra, Kahn's Toposort
+- 📊 **330 core algorithms** spanning 11 categories (30 per category)
+- ⚙️ **`package-private` class structure** ensuring zero `duplicate class` collision issues during compilation.
+- 🚀 **Built-in `./bin/run.sh` automated CLI** testing suite to rapidly compile and run any algorithm.
+- 💡 **Optimal implementations** covering Kadane's, Kahn's Topological Sort, Morris Traversals, Knapsacks, Tarjan's Bridge-Finding, and more.
+- 🏢 **Company × Problem matrix** (Google / Amazon / Meta / Microsoft / Apple checkmarks) provided in each module's Excel.
 
 ### 🔑 Key Graph Patterns Covered
 
@@ -74,15 +74,11 @@ The `graphs/` folder contains our **first fully-researched topic set**:
 
 ---
 
-## 🧠 Dynamic Programming — Top 30 (Latest)
+## 🧠 Dynamic Programming — Full Matrix
 
-The `dynamic-programming/` folder is the second fully-researched topic set:
-
-- 📊 **30 high-frequency problems** from FAANG interviews (2023–2026)
-- 🏷️ Each tagged with: LC#, difficulty, DP pattern, acceptance %, time/space complexity, companies
+- 📊 **30 high-frequency DP problems** from FAANG interviews (2023–2026)
 - 📅 **5-week practice roadmap** (1D Foundations → Knapsack+Grid → String+Stock → Hard I → Hard II)
-- 🏢 **Company × Problem matrix** (Google / Amazon / Meta / Microsoft / Apple checkmarks)
-- 💡 Python templates for Knapsack, Edit Distance, State Machine DP, LIS (O(N log N))
+- 💡 Extensive 1D and 2D arrays, unbounded/fractional knapsacks, state machines.
 
 ### 🔑 Key DP Patterns Covered
 
@@ -117,9 +113,9 @@ Each topic will follow the same template when added:
 ## 🏃 Quick Start
 
 ```bash
-# Clone the repo
-git clone https://github.com/utkarsh-mehrotra/leetcode-faang-prep.git
-cd leetcode-faang-prep
+# Clone the playbook
+git clone https://github.com/utkarsh-mehrotra/leetcode-playbook.git
+cd leetcode-playbook
 
 # Open the Graph problems Excel (macOS)
 open graphs/resources/FAANG_Graph_Problems.xlsx
