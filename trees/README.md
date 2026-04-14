@@ -17,3 +17,6 @@ All solutions are in **Java**. Files follow the naming convention `<LC#>_<Pascal
 |---|---|
 | [`104_MaxDepthOfBinaryTree.java`](solutions/104_MaxDepthOfBinaryTree.java) | Defined Pattern |
 | [`100_SameTree.java`](solutions/100_SameTree.java) | Defined Pattern |
+| [`226_InvertBinaryTree.java`](solutions/226_InvertBinaryTree.java) | DFS / BFS |
+| [`235_LowestCommonAncestorOfABinarySearchTree.java`](solutions/235_LowestCommonAncestorOfABinarySearchTree.java) | BST Traversal |
+| [`102_BinaryTreeLevelOrderTraversal.java`](solutions/102_BinaryTreeLevelOrderTraversal.java) | BFS |

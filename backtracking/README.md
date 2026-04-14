@@ -17,3 +17,6 @@ All solutions are in **Java**. Files follow the naming convention `<LC#>_<Pascal
 |---|---|
 | [`039_CombinationSum.java`](solutions/039_CombinationSum.java) | Defined Pattern |
 | [`046_Permutations.java`](solutions/046_Permutations.java) | Defined Pattern |
+| [`079_WordSearch.java`](solutions/079_WordSearch.java) | DFS / Backtracking |
+| [`078_Subsets.java`](solutions/078_Subsets.java) | Backtracking |
+| [`051_NQueens.java`](solutions/051_NQueens.java) | Backtracking |

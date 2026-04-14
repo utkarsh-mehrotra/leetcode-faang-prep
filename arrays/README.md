@@ -17,3 +17,6 @@ All solutions are in **Java**. Files follow the naming convention `<LC#>_<Pascal
 |---|---|
 | [`001_TwoSum.java`](solutions/001_TwoSum.java) | Defined Pattern |
 | [`217_ContainsDuplicate.java`](solutions/217_ContainsDuplicate.java) | Defined Pattern |
+| [`238_ProductOfArrayExceptSelf.java`](solutions/238_ProductOfArrayExceptSelf.java) | Prefix Sum |
+| [`053_MaximumSubarray.java`](solutions/053_MaximumSubarray.java) | Kadane's Algorithm |
+| [`152_MaximumProductSubarray.java`](solutions/152_MaximumProductSubarray.java) | Prefix/Suffix |

@@ -17,3 +17,6 @@ All solutions are in **Java**. Files follow the naming convention `<LC#>_<Pascal
 |---|---|
 | [`242_ValidAnagram.java`](solutions/242_ValidAnagram.java) | Defined Pattern |
 | [`125_ValidPalindrome.java`](solutions/125_ValidPalindrome.java) | Defined Pattern |
+| [`003_LongestSubstringWithoutRepeatingCharacters.java`](solutions/003_LongestSubstringWithoutRepeatingCharacters.java) | Sliding Window |
+| [`424_LongestRepeatingCharacterReplacement.java`](solutions/424_LongestRepeatingCharacterReplacement.java) | Sliding Window |
+| [`049_GroupAnagrams.java`](solutions/049_GroupAnagrams.java) | Hash Map |
