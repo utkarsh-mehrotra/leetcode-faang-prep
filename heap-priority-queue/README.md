@@ -17,3 +17,6 @@ All solutions are in **Java**. Files follow the naming convention `<LC#>_<Pascal
 |---|---|
 | [`703_KthLargestElementInAStream.java`](solutions/703_KthLargestElementInAStream.java) | Defined Pattern |
 | [`1046_LastStoneWeight.java`](solutions/1046_LastStoneWeight.java) | Defined Pattern |
+| [`973_KClosestPointsToOrigin.java`](solutions/973_KClosestPointsToOrigin.java) | Max Heap |
+| [`215_KthLargestElementInAnArray.java`](solutions/215_KthLargestElementInAnArray.java) | Min Heap (or Quickselect) |
+| [`621_TaskScheduler.java`](solutions/621_TaskScheduler.java) | Max Heap |

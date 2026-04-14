@@ -17,3 +17,6 @@ All solutions are in **Java**. Files follow the naming convention `<LC#>_<Pascal
 |---|---|
 | [`704_BinarySearch.java`](solutions/704_BinarySearch.java) | Defined Pattern |
 | [`074_Search2DMatrix.java`](solutions/074_Search2DMatrix.java) | Defined Pattern |
+| [`153_FindMinimumInRotatedSortedArray.java`](solutions/153_FindMinimumInRotatedSortedArray.java) | Binary Search (Rotated) |
+| [`033_SearchInRotatedSortedArray.java`](solutions/033_SearchInRotatedSortedArray.java) | Binary Search (Rotated) |
+| [`875_KokoEatingBananas.java`](solutions/875_KokoEatingBananas.java) | Binary Search on Answer |

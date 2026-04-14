@@ -17,3 +17,6 @@ All solutions are in **Java**. Files follow the naming convention `<LC#>_<Pascal
 |---|---|
 | [`020_ValidParentheses.java`](solutions/020_ValidParentheses.java) | Defined Pattern |
 | [`155_MinStack.java`](solutions/155_MinStack.java) | Defined Pattern |
+| [`150_EvaluateReversePolishNotation.java`](solutions/150_EvaluateReversePolishNotation.java) | Stack |
+| [`022_GenerateParentheses.java`](solutions/022_GenerateParentheses.java) | Stack / Backtracking |
+| [`739_DailyTemperatures.java`](solutions/739_DailyTemperatures.java) | Monotonic Stack |

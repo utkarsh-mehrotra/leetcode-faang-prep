@@ -17,3 +17,6 @@ All solutions are in **Java**. Files follow the naming convention `<LC#>_<Pascal
 |---|---|
 | [`167_TwoSumII.java`](solutions/167_TwoSumII.java) | Defined Pattern |
 | [`011_ContainerWithMostWater.java`](solutions/011_ContainerWithMostWater.java) | Defined Pattern |
+| [`125_ValidPalindrome.java`](solutions/125_ValidPalindrome.java) | Two Pointers |
+| [`015_3Sum.java`](solutions/015_3Sum.java) | Two Pointers |
+| [`042_TrappingRainWater.java`](solutions/042_TrappingRainWater.java) | Two Pointers |
