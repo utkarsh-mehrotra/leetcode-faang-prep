@@ -34,16 +34,16 @@ leetcode-faang-prep/
 | Topic | Status | Problems Added | Excel / Notes |
 |---|---|---|---|
 | **Graphs** | 🟢 Done | 30 | [FAANG_Graph_Problems.xlsx](graphs/resources/FAANG_Graph_Problems.xlsx) |
-| **Dynamic Programming** | 🟢 Active | 30 | [FAANG_DP_Problems.xlsx](dynamic-programming/resources/FAANG_DP_Problems.xlsx) |
-| Arrays | 🔜 Next | — | — |
-| Strings | 🔜 Planned | — | — |
-| Trees | 🔜 Planned | — | — |
-| Backtracking | 🔜 Planned | — | — |
-| Sliding Window | 🔜 Planned | — | — |
-| Two Pointers | 🔜 Planned | — | — |
-| Binary Search | 🔜 Planned | — | — |
-| Heap / Priority Queue | 🔜 Planned | — | — |
-| Stack / Queue | 🔜 Planned | — | — |
+| **Dynamic Programming** | 🟢 Done | 30 | [FAANG_DP_Problems.xlsx](dynamic-programming/resources/FAANG_DP_Problems.xlsx) |
+| **Arrays** | 🟢 Done | 30 | [FAANG_Arrays_Problems.xlsx](arrays/resources/FAANG_Arrays_Problems.xlsx) |
+| **Strings** | 🟢 Done | 30 | [FAANG_Strings_Problems.xlsx](strings/resources/FAANG_Strings_Problems.xlsx) |
+| **Trees** | 🟢 Done | 30 | [FAANG_Trees_Problems.xlsx](trees/resources/FAANG_Trees_Problems.xlsx) |
+| **Backtracking** | 🟢 Done | 30 | [FAANG_Backtracking_Problems.xlsx](backtracking/resources/FAANG_Backtracking_Problems.xlsx) |
+| **Sliding Window** | 🟢 Done | 30 | [FAANG_Sliding-Window_Problems.xlsx](sliding-window/resources/FAANG_Sliding_Window_Problems.xlsx) |
+| **Two Pointers** | 🟢 Done | 30 | [FAANG_Two-Pointers_Problems.xlsx](two-pointers/resources/FAANG_Two_Pointers_Problems.xlsx) |
+| **Binary Search** | 🟢 Done | 30 | [FAANG_Binary-Search_Problems.xlsx](binary-search/resources/FAANG_Binary_Search_Problems.xlsx) |
+| **Heap / Priority Queue** | 🟢 Done | 30 | [FAANG_Heap-Priority-Queue_Problems.xlsx](heap-priority-queue/resources/FAANG_Heap_Priority_Queue_Problems.xlsx) |
+| **Stack / Queue** | 🟢 Done | 30 | [FAANG_Stack-Queue_Problems.xlsx](stack-queue/resources/FAANG_Stack_Queue_Problems.xlsx) |
 
 ---
 
