@@ -1,17 +1,20 @@
-/**
- * 1806. Stack queue Operations Variation 6
- * Difficulty: Easy
- * Pattern: Monotonic Stack
- * 
- * Auto-generated blueprint.
- */
+import java.util.*;
 class _1806_StackQueueOperationsVariation6 {
-    // TODO: Implement Stack queue Operations Variation 6 algorithm
-    public void solve() {
-        // Core pattern: Monotonic Stack
+    public int solve(int[] heights) {
+        // Largest Rectangle in Histogram (Monotonic Stack)
+        Stack<Integer> stack = new Stack<>();
+        int maxArea = 0;
+        int[] h = new int[heights.length + 1];
+        for(int i=0; i<heights.length; i++) h[i] = heights[i];
+        for(int i=0; i<h.length; i++) {
+            while(!stack.isEmpty() && h[i] < h[stack.peek()]) {
+                int height = h[stack.pop()];
+                int width = stack.isEmpty() ? i : i - stack.peek() - 1;
+                maxArea = Math.max(maxArea, height * width);
+            }
+            stack.push(i);
+        }
+        return maxArea;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Stack queue Operations Variation 6 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

@@ -1,17 +1,19 @@
-/**
- * 1810. Stack queue Operations Variation 10
- * Difficulty: Medium
- * Pattern: Expression Parsing
- * 
- * Auto-generated blueprint.
- */
+import java.util.*;
 class _1810_StackQueueOperationsVariation10 {
-    // TODO: Implement Stack queue Operations Variation 10 algorithm
-    public void solve() {
-        // Core pattern: Expression Parsing
+    public int[] solve(int[] nums, int k) {
+        // Sliding Window Maximum (Monotonic Queue)
+        if (nums == null || k <= 0) return new int[0];
+        int n = nums.length;
+        int[] r = new int[n-k+1];
+        int ri = 0;
+        Deque<Integer> q = new ArrayDeque<>();
+        for (int i=0; i<n; i++) {
+            while (!q.isEmpty() && q.peek() < i - k + 1) q.poll();
+            while (!q.isEmpty() && nums[q.peekLast()] < nums[i]) q.pollLast();
+            q.offer(i);
+            if (i >= k - 1) r[ri++] = nums[q.peek()];
+        }
+        return r;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Stack queue Operations Variation 10 template loaded.");
-    }
+    public static void main(String[] args) {}
 }
