@@ -1,17 +1,18 @@
 class _174_DungeonGame {
-    public int calculateMinimumHP(int[][] dungeon) {
+    Integer[][] memo;
+    public int solve(int[][] dungeon) {
+        memo = new Integer[dungeon.length][dungeon[0].length];
+        return dfs(dungeon, 0, 0);
+    }
+    private int dfs(int[][] dungeon, int r, int c) {
         int m = dungeon.length, n = dungeon[0].length;
-        int[][] dp = new int[m+1][n+1];
-        for (int i=0; i<=m; i++) java.util.Arrays.fill(dp[i], Integer.MAX_VALUE);
-        dp[m][n-1] = 1; dp[m-1][n] = 1;
-        
-        for (int i=m-1; i>=0; i--) {
-            for (int j=n-1; j>=0; j--) {
-                int minHealth = Math.min(dp[i+1][j], dp[i][j+1]) - dungeon[i][j];
-                dp[i][j] = minHealth <= 0 ? 1 : minHealth;
-            }
-        }
-        return dp[0][0];
+        if (r >= m || c >= n) return Integer.MAX_VALUE;
+        if (r == m - 1 && c == n - 1) return Math.max(1, 1 - dungeon[r][c]);
+        if (memo[r][c] != null) return memo[r][c];
+        int right = dfs(dungeon, r, c + 1);
+        int down = dfs(dungeon, r + 1, c);
+        int minHealth = Math.min(right, down) - dungeon[r][c];
+        return memo[r][c] = Math.max(1, minHealth);
     }
     public static void main(String[] args) {}
 }

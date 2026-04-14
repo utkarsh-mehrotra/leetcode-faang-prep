@@ -1,19 +1,21 @@
 import java.util.*;
 class _139_WordBreak {
-    public boolean wordBreak(String s, List<String> wordDict) {
-        Set<String> set = new HashSet<>(wordDict);
-        boolean[] dp = new boolean[s.length() + 1];
-        dp[0] = true;
-        
-        for (int i=1; i<=s.length(); i++) {
-            for (int j=0; j<i; j++) {
-                if (dp[j] && set.contains(s.substring(j, i))) {
-                    dp[i] = true;
-                    break;
-                }
+    Integer[] memo;
+    public boolean solve(String s, List<String> wordDict) {
+        memo = new Integer[s.length()];
+        return dfs(s, new HashSet<>(wordDict), 0);
+    }
+    private boolean dfs(String s, Set<String> dict, int start) {
+        if (start == s.length()) return true;
+        if (memo[start] != null) return memo[start] == 1;
+        for (int end = start + 1; end <= s.length(); end++) {
+            if (dict.contains(s.substring(start, end)) && dfs(s, dict, end)) {
+                memo[start] = 1;
+                return true;
             }
         }
-        return dp[s.length()];
+        memo[start] = 0;
+        return false;
     }
     public static void main(String[] args) {}
 }

@@ -1,21 +1,21 @@
 class _044_WildcardMatching {
-    public boolean isMatch(String s, String p) {
-        int m = s.length(), n = p.length();
-        boolean[][] dp = new boolean[m + 1][n + 1];
-        dp[0][0] = true;
-        for (int j = 1; j <= n; j++) {
-            if (p.charAt(j - 1) == '*') dp[0][j] = dp[0][j - 1];
+    Integer[][] memo;
+    public boolean solve(String s, String p) {
+        memo = new Integer[s.length()+1][p.length()+1];
+        return dp(0, 0, s, p);
+    }
+    private boolean dp(int i, int j, String s, String p) {
+        if (memo[i][j] != null) return memo[i][j] == 1;
+        if (j == p.length()) return i == s.length();
+        boolean ans;
+        if (p.charAt(j) == '*') {
+            ans = dp(i, j+1, s, p) || (i < s.length() && dp(i+1, j, s, p));
+        } else {
+            boolean match = i < s.length() && (s.charAt(i) == p.charAt(j) || p.charAt(j) == '?');
+            ans = match && dp(i+1, j+1, s, p);
         }
-        for (int i = 1; i <= m; i++) {
-            for (int j = 1; j <= n; j++) {
-                if (s.charAt(i - 1) == p.charAt(j - 1) || p.charAt(j - 1) == '?') {
-                    dp[i][j] = dp[i - 1][j - 1];
-                } else if (p.charAt(j - 1) == '*') {
-                    dp[i][j] = dp[i - 1][j] || dp[i][j - 1];
-                }
-            }
-        }
-        return dp[m][n];
+        memo[i][j] = ans ? 1 : 0;
+        return ans;
     }
     public static void main(String[] args) {}
 }

@@ -1,18 +1,14 @@
 class _1143_LongestCommonSubsequence {
-    public int longestCommonSubsequence(String text1, String text2) {
-        int m = text1.length(), n = text2.length();
-        int[][] dp = new int[m+1][n+1];
-        
-        for (int i=1; i<=m; i++) {
-            for (int j=1; j<=n; j++) {
-                if (text1.charAt(i-1) == text2.charAt(j-1)) {
-                    dp[i][j] = 1 + dp[i-1][j-1];
-                } else {
-                    dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1]);
-                }
-            }
-        }
-        return dp[m][n];
+    Integer[][] memo;
+    public int solve(String text1, String text2) {
+        memo = new Integer[text1.length()][text2.length()];
+        return dfs(text1, text2, 0, 0);
+    }
+    private int dfs(String t1, String t2, int i, int j) {
+        if (i == t1.length() || j == t2.length()) return 0;
+        if (memo[i][j] != null) return memo[i][j];
+        if (t1.charAt(i) == t2.charAt(j)) return memo[i][j] = 1 + dfs(t1, t2, i+1, j+1);
+        return memo[i][j] = Math.max(dfs(t1, t2, i+1, j), dfs(t1, t2, i, j+1));
     }
     public static void main(String[] args) {}
 }

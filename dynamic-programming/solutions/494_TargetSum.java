@@ -1,18 +1,17 @@
 class _494_TargetSum {
-    public int findTargetSumWays(int[] nums, int target) {
-        int sum = 0;
-        for (int n : nums) sum += n;
-        if (Math.abs(target) > sum || (sum + target) % 2 != 0) return 0;
-        int s = (sum + target) / 2;
-        
-        int[] dp = new int[s + 1];
-        dp[0] = 1;
-        for (int n : nums) {
-            for (int i=s; i>=n; i--) {
-                dp[i] += dp[i-n];
-            }
-        }
-        return dp[s];
+    Integer[][] memo;
+    public int solve(int[] nums, int target) {
+        int total = 0;
+        for (int n : nums) total += n;
+        memo = new Integer[nums.length][2 * total + 1];
+        return dfs(nums, target, 0, 0, total);
+    }
+    private int dfs(int[] nums, int target, int idx, int sum, int total) {
+        if (idx == nums.length) return sum == target ? 1 : 0;
+        if (memo[idx][sum + total] != null) return memo[idx][sum + total];
+        int add = dfs(nums, target, idx+1, sum + nums[idx], total);
+        int sub = dfs(nums, target, idx+1, sum - nums[idx], total);
+        return memo[idx][sum + total] = add + sub;
     }
     public static void main(String[] args) {}
 }

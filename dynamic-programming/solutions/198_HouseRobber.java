@@ -1,16 +1,13 @@
 class _198_HouseRobber {
-    public int rob(int[] nums) {
-        if (nums == null || nums.length == 0) return 0;
-        if (nums.length == 1) return nums[0];
-        int prev1 = Math.max(nums[0], nums[1]);
-        int prev2 = nums[0];
-        
-        for (int i=2; i<nums.length; i++) {
-            int temp = prev1;
-            prev1 = Math.max(prev1, prev2 + nums[i]);
-            prev2 = temp;
-        }
-        return prev1;
+    Integer[] memo;
+    public int solve(int[] nums) {
+        memo = new Integer[nums.length];
+        return dfs(nums, 0);
+    }
+    private int dfs(int[] nums, int i) {
+        if (i >= nums.length) return 0;
+        if (memo[i] != null) return memo[i];
+        return memo[i] = Math.max(dfs(nums, i+1), nums[i] + dfs(nums, i+2));
     }
     public static void main(String[] args) {}
 }

@@ -1,13 +1,13 @@
 class _062_UniquePaths {
-    public int uniquePaths(int m, int n) {
-        int[] dp = new int[n];
-        java.util.Arrays.fill(dp, 1);
-        for (int i = 1; i < m; i++) {
-            for (int j = 1; j < n; j++) {
-                dp[j] += dp[j - 1];
-            }
-        }
-        return dp[n - 1];
+    Integer[][] memo;
+    public int solve(int m, int n) {
+        memo = new Integer[m][n];
+        return dfs(m-1, n-1);
+    }
+    private int dfs(int r, int c) {
+        if (r == 0 || c == 0) return 1;
+        if (memo[r][c] != null) return memo[r][c];
+        return memo[r][c] = dfs(r-1, c) + dfs(r, c-1);
     }
     public static void main(String[] args) {}
 }

@@ -1,18 +1,19 @@
 class _091_DecodeWays {
-    public int numDecodings(String s) {
-        if (s == null || s.length() == 0 || s.charAt(0) == '0') return 0;
-        int n = s.length();
-        int[] dp = new int[n + 1];
-        dp[0] = 1;
-        dp[1] = 1;
-        for (int i = 2; i <= n; i++) {
-            int oneDigit = Integer.valueOf(s.substring(i - 1, i));
-            int twoDigits = Integer.valueOf(s.substring(i - 2, i));
-            
-            if (oneDigit >= 1 && oneDigit <= 9) dp[i] += dp[i - 1];
-            if (twoDigits >= 10 && twoDigits <= 26) dp[i] += dp[i - 2];
+    Integer[] memo;
+    public int solve(String s) {
+        memo = new Integer[s.length()];
+        return dfs(s, 0);
+    }
+    private int dfs(String s, int index) {
+        if (index == s.length()) return 1;
+        if (s.charAt(index) == '0') return 0;
+        if (index == s.length() - 1) return 1;
+        if (memo[index] != null) return memo[index];
+        int ans = dfs(s, index + 1);
+        if (Integer.parseInt(s.substring(index, index + 2)) <= 26) {
+            ans += dfs(s, index + 2);
         }
-        return dp[n];
+        return memo[index] = ans;
     }
     public static void main(String[] args) {}
 }

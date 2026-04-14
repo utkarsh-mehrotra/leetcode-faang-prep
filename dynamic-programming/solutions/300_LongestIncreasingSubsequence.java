@@ -1,15 +1,18 @@
 class _300_LongestIncreasingSubsequence {
-    public int lengthOfLIS(int[] nums) {
-        if (nums == null || nums.length == 0) return 0;
-        int[] dp = new int[nums.length];
-        int len = 0;
-        for (int num : nums) {
-            int i = java.util.Arrays.binarySearch(dp, 0, len, num);
-            if (i < 0) i = -(i + 1);
-            dp[i] = num;
-            if (i == len) len++;
+    Integer[][] memo;
+    public int solve(int[] nums) {
+        memo = new Integer[nums.length + 1][nums.length];
+        return dfs(nums, -1, 0);
+    }
+    private int dfs(int[] nums, int prev_index, int curr_index) {
+        if (curr_index == nums.length) return 0;
+        if (memo[prev_index + 1][curr_index] != null) return memo[prev_index + 1][curr_index];
+        int taken = 0;
+        if (prev_index < 0 || nums[curr_index] > nums[prev_index]) {
+            taken = 1 + dfs(nums, curr_index, curr_index + 1);
         }
-        return len;
+        int nottaken = dfs(nums, prev_index, curr_index + 1);
+        return memo[prev_index + 1][curr_index] = Math.max(taken, nottaken);
     }
     public static void main(String[] args) {}
 }

@@ -1,13 +1,21 @@
 class _121_BestTimeToBuysellStock {
-    public int maxProfit(int[] prices) {
-        if (prices == null || prices.length == 0) return 0;
-        int maxProfit = 0;
-        int minPrice = prices[0];
-        for (int i=1; i<prices.length; i++) {
-            minPrice = Math.min(minPrice, prices[i]);
-            maxProfit = Math.max(maxProfit, prices[i] - minPrice);
+    Integer[][] memo;
+    public int solve(int[] prices) {
+        memo = new Integer[prices.length][2];
+        return dfs(prices, 0, 1);
+    }
+    private int dfs(int[] p, int idx, int available) {
+        if (idx == p.length || available == -1) return 0;
+        if (memo[idx][available] != null) return memo[idx][available];
+        if (available == 1) { // Buy state
+            int buy = -p[idx] + dfs(p, idx+1, 0);
+            int skip = dfs(p, idx+1, 1);
+            return memo[idx][available] = Math.max(buy, skip);
+        } else { // Sell state
+            int sell = p[idx]; 
+            int skip = dfs(p, idx+1, 0);
+            return memo[idx][available] = Math.max(sell, skip);
         }
-        return maxProfit;
     }
     public static void main(String[] args) {}
 }
