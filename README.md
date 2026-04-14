@@ -1,4 +1,4 @@
-# 🚀 LeetCode Playbook
+# 🚀 LeetCode PlayBook
 
 > A living, incrementally-built repository of curated LeetCode problems, pattern notes, and resources
 > organised by topic — targeting **Google · Amazon · Meta · Microsoft · Apple** interviews since 2023.
