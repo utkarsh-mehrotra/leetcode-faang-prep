@@ -1,17 +1,16 @@
-/**
- * 1710. Heap priority queue Operations Variation 10
- * Difficulty: Medium
- * Pattern: Two Heaps
- * 
- * Auto-generated blueprint.
- */
+import java.util.*;
 class _1710_HeapPriorityQueueOperationsVariation10 {
-    // TODO: Implement Heap priority queue Operations Variation 10 algorithm
-    public void solve() {
-        // Core pattern: Two Heaps
+    public int solve(int[] ropes) {
+        // Minimum Cost to Connect Sticks (Ropes)
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        for (int r : ropes) pq.add(r);
+        int cost = 0;
+        while (pq.size() > 1) {
+            int sum = pq.poll() + pq.poll();
+            cost += sum;
+            pq.add(sum);
+        }
+        return cost;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Heap priority queue Operations Variation 10 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

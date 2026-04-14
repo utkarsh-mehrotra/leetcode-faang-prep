@@ -1,17 +1,17 @@
-/**
- * 1708. Heap priority queue Operations Variation 8
- * Difficulty: Medium
- * Pattern: Min Heap
- * 
- * Auto-generated blueprint.
- */
+import java.util.*;
 class _1708_HeapPriorityQueueOperationsVariation8 {
-    // TODO: Implement Heap priority queue Operations Variation 8 algorithm
-    public void solve() {
-        // Core pattern: Min Heap
+    public String solve(String s) {
+        // Sort Characters By Frequency
+        Map<Character, Integer> map = new HashMap<>();
+        for (char c : s.toCharArray()) map.put(c, map.getOrDefault(c, 0) + 1);
+        PriorityQueue<Character> maxHeap = new PriorityQueue<>((a, b) -> map.get(b) - map.get(a));
+        maxHeap.addAll(map.keySet());
+        StringBuilder sb = new StringBuilder();
+        while (!maxHeap.isEmpty()) {
+            char c = maxHeap.poll();
+            for (int i=0; i<map.get(c); i++) sb.append(c);
+        }
+        return sb.toString();
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Heap priority queue Operations Variation 8 template loaded.");
-    }
+    public static void main(String[] args) {}
 }
