@@ -1,17 +1,12 @@
-/**
- * 1124. Strings Operations Variation 24
- * Difficulty: Easy
- * Pattern: Sliding Window
- * 
- * Auto-generated blueprint.
- */
 class _1124_StringsOperationsVariation24 {
-    // TODO: Implement Strings Operations Variation 24 algorithm
-    public void solve() {
-        // Core pattern: Sliding Window
+    public int solve(String s) {
+        // Count string vowels template
+        int count = 0;
+        String vowels = "aeiouAEIOU";
+        for (char c : s.toCharArray()) {
+            if (vowels.indexOf(c) != -1) count++;
+        }
+        return count;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Strings Operations Variation 24 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

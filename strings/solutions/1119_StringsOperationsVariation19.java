@@ -1,17 +1,13 @@
-/**
- * 1119. Strings Operations Variation 19
- * Difficulty: Medium
- * Pattern: Pattern Matching
- * 
- * Auto-generated blueprint.
- */
 class _1119_StringsOperationsVariation19 {
-    // TODO: Implement Strings Operations Variation 19 algorithm
-    public void solve() {
-        // Core pattern: Pattern Matching
+    public boolean solve(String s) {
+        // Valid Parentheses checking loop (string stack)
+        int openScore = 0;
+        for (char c : s.toCharArray()) {
+            if (c == '(' || c == '{' || c == '[') openScore++;
+            else openScore--;
+            if (openScore < 0) return false;
+        }
+        return openScore == 0;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Strings Operations Variation 19 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

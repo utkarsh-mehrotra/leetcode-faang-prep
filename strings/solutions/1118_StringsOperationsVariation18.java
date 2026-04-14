@@ -1,17 +1,18 @@
-/**
- * 1118. Strings Operations Variation 18
- * Difficulty: Easy
- * Pattern: Hash Map
- * 
- * Auto-generated blueprint.
- */
 class _1118_StringsOperationsVariation18 {
-    // TODO: Implement Strings Operations Variation 18 algorithm
-    public void solve() {
-        // Core pattern: Hash Map
+    public boolean solve(String word, String abbr) {
+        // Valid Word Abbreviation Generic Logic
+        int i = 0, j = 0;
+        while (i < word.length() && j < abbr.length()) {
+            if (word.charAt(i) == abbr.charAt(j)) { i++; j++; continue; }
+            if (abbr.charAt(j) <= '0' || abbr.charAt(j) > '9') return false;
+            int num = 0;
+            while (j < abbr.length() && Character.isDigit(abbr.charAt(j))) {
+                num = num * 10 + (abbr.charAt(j) - '0');
+                j++;
+            }
+            i += num;
+        }
+        return i == word.length() && j == abbr.length();
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Strings Operations Variation 18 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

@@ -1,17 +1,13 @@
-/**
- * 1114. Strings Operations Variation 14
- * Difficulty: Medium
- * Pattern: Hash Map
- * 
- * Auto-generated blueprint.
- */
 class _1114_StringsOperationsVariation14 {
-    // TODO: Implement Strings Operations Variation 14 algorithm
-    public void solve() {
-        // Core pattern: Hash Map
+    public void solve(char[] s) {
+        // Reverse String O(1) space
+        int left = 0, right = s.length - 1;
+        while (left < right) {
+            char temp = s[left];
+            s[left] = s[right];
+            s[right] = temp;
+            left++; right--;
+        }
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Strings Operations Variation 14 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

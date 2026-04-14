@@ -1,17 +1,11 @@
-/**
- * 1129. Strings Operations Variation 29
- * Difficulty: Medium
- * Pattern: Two Pointers
- * 
- * Auto-generated blueprint.
- */
 class _1129_StringsOperationsVariation29 {
-    // TODO: Implement Strings Operations Variation 29 algorithm
-    public void solve() {
-        // Core pattern: Two Pointers
+    public String solve(String s) {
+        // Detect Capital Use
+        if (s.length() < 2) return "";
+        boolean firstCap = Character.isUpperCase(s.charAt(0));
+        boolean secondCap = Character.isUpperCase(s.charAt(1));
+        if (!firstCap && secondCap) return "False";
+        return "True";
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Strings Operations Variation 29 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

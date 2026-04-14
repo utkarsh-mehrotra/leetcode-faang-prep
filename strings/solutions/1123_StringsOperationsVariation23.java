@@ -1,17 +1,16 @@
-/**
- * 1123. Strings Operations Variation 23
- * Difficulty: Medium
- * Pattern: Pattern Matching
- * 
- * Auto-generated blueprint.
- */
 class _1123_StringsOperationsVariation23 {
-    // TODO: Implement Strings Operations Variation 23 algorithm
-    public void solve() {
-        // Core pattern: Pattern Matching
+    public String solve(String s) {
+        // Remove All Adjacent Duplicates In String 
+        StringBuilder sb = new StringBuilder();
+        for (char c : s.toCharArray()) {
+            int size = sb.length();
+            if (size > 0 && sb.charAt(size - 1) == c) {
+                sb.deleteCharAt(size - 1);
+            } else {
+                sb.append(c);
+            }
+        }
+        return sb.toString();
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Strings Operations Variation 23 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

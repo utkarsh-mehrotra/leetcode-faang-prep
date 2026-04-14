@@ -1,17 +1,15 @@
-/**
- * 1108. Strings Operations Variation 8
- * Difficulty: Medium
- * Pattern: Sliding Window
- * 
- * Auto-generated blueprint.
- */
 class _1108_StringsOperationsVariation8 {
-    // TODO: Implement Strings Operations Variation 8 algorithm
-    public void solve() {
-        // Core pattern: Sliding Window
+    public String solve(String[] strs) {
+        // Longest Common Prefix
+        if (strs == null || strs.length == 0) return "";
+        String prefix = strs[0];
+        for (int i = 1; i < strs.length; i++) {
+            while (strs[i].indexOf(prefix) != 0) {
+                prefix = prefix.substring(0, prefix.length() - 1);
+                if (prefix.isEmpty()) return "";
+            }
+        }
+        return prefix;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Strings Operations Variation 8 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

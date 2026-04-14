@@ -1,17 +1,18 @@
-/**
- * 1111. Strings Operations Variation 11
- * Difficulty: Medium
- * Pattern: Pattern Matching
- * 
- * Auto-generated blueprint.
- */
 class _1111_StringsOperationsVariation11 {
-    // TODO: Implement Strings Operations Variation 11 algorithm
-    public void solve() {
-        // Core pattern: Pattern Matching
+    public int solve(String s) {
+        // Longest Palindromic Substring Expansion Array
+        int max = 0;
+        for (int i = 0; i < s.length(); i++) {
+            max = Math.max(max, expand(s, i, i));
+            max = Math.max(max, expand(s, i, i + 1));
+        }
+        return max;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Strings Operations Variation 11 template loaded.");
+    private int expand(String s, int l, int r) {
+        while (l >= 0 && r < s.length() && s.charAt(l) == s.charAt(r)) {
+            l--; r++;
+        }
+        return r - l - 1;
     }
+    public static void main(String[] args) {}
 }

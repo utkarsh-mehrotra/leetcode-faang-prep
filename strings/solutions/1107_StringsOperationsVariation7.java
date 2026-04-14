@@ -1,17 +1,27 @@
-/**
- * 1107. Strings Operations Variation 7
- * Difficulty: Medium
- * Pattern: Pattern Matching
- * 
- * Auto-generated blueprint.
- */
 class _1107_StringsOperationsVariation7 {
-    // TODO: Implement Strings Operations Variation 7 algorithm
-    public void solve() {
-        // Core pattern: Pattern Matching
+    public int solve(String text, String pattern) {
+        // Rabin-Karp String Matching
+        int q = 101, d = 256;
+        int m = pattern.length(), n = text.length();
+        int i, j, p = 0, t = 0, h = 1;
+        for (i = 0; i < m - 1; i++) h = (h * d) % q;
+        for (i = 0; i < m; i++) {
+            p = (d * p + pattern.charAt(i)) % q;
+            t = (d * t + text.charAt(i)) % q;
+        }
+        for (i = 0; i <= n - m; i++) {
+            if (p == t) {
+                for (j = 0; j < m; j++) {
+                    if (text.charAt(i + j) != pattern.charAt(j)) break;
+                }
+                if (j == m) return i;
+            }
+            if (i < n - m) {
+                t = (d * (t - text.charAt(i) * h) + text.charAt(i + m)) % q;
+                if (t < 0) t += q;
+            }
+        }
+        return -1;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Strings Operations Variation 7 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

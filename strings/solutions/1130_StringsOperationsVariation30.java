@@ -1,17 +1,13 @@
-/**
- * 1130. Strings Operations Variation 30
- * Difficulty: Hard
- * Pattern: Hash Map
- * 
- * Auto-generated blueprint.
- */
 class _1130_StringsOperationsVariation30 {
-    // TODO: Implement Strings Operations Variation 30 algorithm
-    public void solve() {
-        // Core pattern: Hash Map
+    public boolean solve(String str) {
+        // Check if string contains all unique chars
+        boolean[] char_set = new boolean[128];
+        for (int i = 0; i < str.length(); i++) {
+            int val = str.charAt(i);
+            if (char_set[val]) return false;
+            char_set[val] = true;
+        }
+        return true;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Strings Operations Variation 30 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

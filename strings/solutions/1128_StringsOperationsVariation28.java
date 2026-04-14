@@ -1,17 +1,11 @@
-/**
- * 1128. Strings Operations Variation 28
- * Difficulty: Medium
- * Pattern: Sliding Window
- * 
- * Auto-generated blueprint.
- */
 class _1128_StringsOperationsVariation28 {
-    // TODO: Implement Strings Operations Variation 28 algorithm
-    public void solve() {
-        // Core pattern: Sliding Window
+    public String solve(String s) {
+        // To Lower Case natively
+        char[] arr = s.toCharArray();
+        for(int i=0; i<arr.length; i++) {
+            if (arr[i] >= 'A' && arr[i] <= 'Z') arr[i] = (char)(arr[i] + 32);
+        }
+        return new String(arr);
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Strings Operations Variation 28 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

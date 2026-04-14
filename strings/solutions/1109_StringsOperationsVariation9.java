@@ -1,17 +1,14 @@
-/**
- * 1109. Strings Operations Variation 9
- * Difficulty: Easy
- * Pattern: Two Pointers
- * 
- * Auto-generated blueprint.
- */
 class _1109_StringsOperationsVariation9 {
-    // TODO: Implement Strings Operations Variation 9 algorithm
-    public void solve() {
-        // Core pattern: Two Pointers
+    public boolean solve(String s) {
+        // Valid Palindrome Builder
+        int i = 0, j = s.length() - 1;
+        while (i < j) {
+            while (i < j && !Character.isLetterOrDigit(s.charAt(i))) i++;
+            while (i < j && !Character.isLetterOrDigit(s.charAt(j))) j--;
+            if (Character.toLowerCase(s.charAt(i)) != Character.toLowerCase(s.charAt(j))) return false;
+            i++; j--;
+        }
+        return true;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Strings Operations Variation 9 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

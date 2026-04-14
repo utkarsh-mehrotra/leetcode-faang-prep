@@ -1,17 +1,11 @@
-/**
- * 1121. Strings Operations Variation 21
- * Difficulty: Easy
- * Pattern: Two Pointers
- * 
- * Auto-generated blueprint.
- */
 class _1121_StringsOperationsVariation21 {
-    // TODO: Implement Strings Operations Variation 21 algorithm
-    public void solve() {
-        // Core pattern: Two Pointers
+    public String solve(String S) {
+        // Generic Caesar Cipher / Shift string left/right
+        StringBuilder sb = new StringBuilder();
+        for (char c : S.toCharArray()) {
+            sb.append((char)('a' + (c - 'a' + 1) % 26));
+        }
+        return sb.toString();
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Strings Operations Variation 21 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

@@ -1,17 +1,15 @@
-/**
- * 1126. Strings Operations Variation 26
- * Difficulty: Medium
- * Pattern: Hash Map
- * 
- * Auto-generated blueprint.
- */
 class _1126_StringsOperationsVariation26 {
-    // TODO: Implement Strings Operations Variation 26 algorithm
-    public void solve() {
-        // Core pattern: Hash Map
+    public int solve(String s) {
+        // Score of Parentheses recursive stack proxy
+        int score = 0, bal = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '(') bal++;
+            else {
+                bal--;
+                if (s.charAt(i - 1) == '(') score += 1 << bal;
+            }
+        }
+        return score;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Strings Operations Variation 26 template loaded.");
-    }
+    public static void main(String[] args) {}
 }
