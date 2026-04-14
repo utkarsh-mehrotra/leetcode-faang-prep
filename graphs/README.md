@@ -28,6 +28,8 @@ Top 30 FAANG graph problems sorted by interview frequency (2023–2026).
 
 ## Solutions
 
-Solutions will be added to `solutions/` as `<LC#>_<snake_case_title>.py`.
+All solutions are in **Java**. Files follow the naming convention `<LC#>_<PascalCaseTitle>.java`.
 
-Example: `solutions/200_number_of_islands.py`
+| File | Problem | Pattern |
+|---|---|---|
+| [`200_NumberOfIslands.java`](solutions/200_NumberOfIslands.java) | Number of Islands | DFS / BFS Grid |

@@ -44,9 +44,9 @@ Use this every time in an interview:
 
 ## Solutions
 
-Solutions live in `solutions/` as `<LC#>_<snake_case_title>.py`.
+All solutions are in **Java**. Files follow the naming convention `<LC#>_<PascalCaseTitle>.java`.
 
 | File | Problem | Pattern |
 |---|---|---|
-| [`070_climbing_stairs.py`](solutions/070_climbing_stairs.py) | Climbing Stairs | 1D DP (Fibonacci) |
-| [`322_coin_change.py`](solutions/322_coin_change.py) | Coin Change | Unbounded Knapsack |
+| [`070_ClimbingStairs.java`](solutions/070_ClimbingStairs.java) | Climbing Stairs | 1D DP (Fibonacci) |
+| [`322_CoinChange.java`](solutions/322_CoinChange.java) | Coin Change | Unbounded Knapsack |

@@ -1,26 +1,27 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-.env
-venv/
-.venv/
+# ── Java ──────────────────────────────────────────────────────────────────────
+*.class
+*.jar
+*.war
+*.ear
+out/
+build/
+target/
+.gradle/
+*.iml
+hs_err_pid*
 
-# macOS
+# ── macOS ─────────────────────────────────────────────────────────────────────
 .DS_Store
 .AppleDouble
 .LSOverride
 
-# Editors
+# ── Editors ───────────────────────────────────────────────────────────────────
 .idea/
 .vscode/
 *.swp
 *.swo
 
-# Jupyter
-.ipynb_checkpoints/
-
-# Temporary files
+# ── Temp / Excel locks ────────────────────────────────────────────────────────
 *.tmp
 *.bak
 ~$*.xlsx
