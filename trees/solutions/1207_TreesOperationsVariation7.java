@@ -1,17 +1,14 @@
-/**
- * 1207. Trees Operations Variation 7
- * Difficulty: Medium
- * Pattern: BST Traversal
- * 
- * Auto-generated blueprint.
- */
+import java.util.*;
 class _1207_TreesOperationsVariation7 {
-    // TODO: Implement Trees Operations Variation 7 algorithm
-    public void solve() {
-        // Core pattern: BST Traversal
+    static class TreeNode { int val; TreeNode left; TreeNode right; TreeNode(int x) { val = x; } }
+    public boolean solve(TreeNode root) {
+        // Validate Binary Search Tree
+        return isValidBST(root, Long.MIN_VALUE, Long.MAX_VALUE);
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Trees Operations Variation 7 template loaded.");
+    private boolean isValidBST(TreeNode node, long min, long max) {
+        if (node == null) return true;
+        if (node.val <= min || node.val >= max) return false;
+        return isValidBST(node.left, min, node.val) && isValidBST(node.right, node.val, max);
     }
+    public static void main(String[] args) {}
 }
