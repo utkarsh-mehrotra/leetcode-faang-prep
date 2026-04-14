@@ -33,11 +33,11 @@ leetcode-faang-prep/
 
 | Topic | Status | Problems Added | Excel / Notes |
 |---|---|---|---|
-| **Graphs** | 🟢 Active | 30 | [FAANG_Graph_Problems.xlsx](graphs/resources/FAANG_Graph_Problems.xlsx) |
+| **Graphs** | 🟢 Done | 30 | [FAANG_Graph_Problems.xlsx](graphs/resources/FAANG_Graph_Problems.xlsx) |
+| **Dynamic Programming** | 🟢 Active | 30 | [FAANG_DP_Problems.xlsx](dynamic-programming/resources/FAANG_DP_Problems.xlsx) |
 | Arrays | 🔜 Next | — | — |
 | Strings | 🔜 Planned | — | — |
 | Trees | 🔜 Planned | — | — |
-| Dynamic Programming | 🔜 Planned | — | — |
 | Backtracking | 🔜 Planned | — | — |
 | Sliding Window | 🔜 Planned | — | — |
 | Two Pointers | 🔜 Planned | — | — |
@@ -74,6 +74,34 @@ The `graphs/` folder contains our **first fully-researched topic set**:
 
 ---
 
+## 🧠 Dynamic Programming — Top 30 (Latest)
+
+The `dynamic-programming/` folder is the second fully-researched topic set:
+
+- 📊 **30 high-frequency problems** from FAANG interviews (2023–2026)
+- 🏷️ Each tagged with: LC#, difficulty, DP pattern, acceptance %, time/space complexity, companies
+- 📅 **5-week practice roadmap** (1D Foundations → Knapsack+Grid → String+Stock → Hard I → Hard II)
+- 🏢 **Company × Problem matrix** (Google / Amazon / Meta / Microsoft / Apple checkmarks)
+- 💡 Python templates for Knapsack, Edit Distance, State Machine DP, LIS (O(N log N))
+
+### 🔑 Key DP Patterns Covered
+
+| Pattern | Example Problems |
+|---|---|
+| 1D DP (Fibonacci / Decision) | #70 Climbing Stairs, #198 House Robber, #213 House Robber II |
+| 1D DP (Kadane's / Min-Max) | #53 Maximum Subarray, #152 Maximum Product Subarray |
+| Unbounded Knapsack | #322 Coin Change, #518 Coin Change II, #377 Combination Sum IV |
+| 0/1 Knapsack | #416 Partition Equal Subset Sum, #494 Target Sum |
+| LCS / Edit Distance | #1143 Longest Common Subsequence, #72 Edit Distance |
+| LIS | #300 Longest Increasing Subsequence |
+| 2D Grid DP | #62 Unique Paths, #64 Minimum Path Sum, #174 Dungeon Game |
+| Palindrome DP | #5 Longest Palindromic Substring, #647 Palindromic Substrings |
+| State Machine DP | #121/#309/#188 Stock series |
+| Interval DP | #312 Burst Balloons |
+| DFS + Memoization | #329 Longest Increasing Path in Matrix, #140 Word Break II |
+
+---
+
 ## 📋 How This Repo Is Built
 
 Each topic will follow the same template when added:
@@ -90,11 +118,14 @@ Each topic will follow the same template when added:
 
 ```bash
 # Clone the repo
-git clone https://github.com/utm-git/leetcode-faang-prep.git
+git clone https://github.com/utkarsh-mehrotra/leetcode-faang-prep.git
 cd leetcode-faang-prep
 
 # Open the Graph problems Excel (macOS)
 open graphs/resources/FAANG_Graph_Problems.xlsx
+
+# Open the DP problems Excel (macOS)
+open dynamic-programming/resources/FAANG_DP_Problems.xlsx
 ```
 
 ---
@@ -106,4 +137,4 @@ in difficulty ratings, acceptance rates, or company tags.
 
 ---
 
-*Updated: April 2026 · Maintained by [@utm-git](https://github.com/utm-git)*
+*Updated: April 2026 · Maintained by [@utkarsh-mehrotra](https://github.com/utkarsh-mehrotra)*
