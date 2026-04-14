@@ -1,17 +1,14 @@
-/**
- * 1607. Binary search Operations Variation 7
- * Difficulty: Medium
- * Pattern: Matrix Search
- * 
- * Auto-generated blueprint.
- */
 class _1607_BinarySearchOperationsVariation7 {
-    // TODO: Implement Binary search Operations Variation 7 algorithm
-    public void solve() {
-        // Core pattern: Matrix Search
+    public int solve(int[] nums, int target) {
+        // Search Insert Position
+        int L = 0, R = nums.length - 1;
+        while (L <= R) {
+            int mid = L + (R - L) / 2;
+            if (nums[mid] == target) return mid;
+            else if (nums[mid] < target) L = mid + 1;
+            else R = mid - 1;
+        }
+        return L;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Binary search Operations Variation 7 template loaded.");
-    }
+    public static void main(String[] args) {}
 }
