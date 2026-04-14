@@ -1,17 +1,23 @@
-/**
- * 785. Is Graph Bipartite?
- * Difficulty: Medium
- * Pattern: BFS / DFS (Coloring)
- * 
- * Auto-generated blueprint.
- */
 class _785_IsGraphBipartite {
-    // TODO: Implement Is Graph Bipartite? algorithm
-    public void solve() {
-        // Core pattern: BFS / DFS (Coloring)
+    public boolean isBipartite(int[][] graph) {
+        int n = graph.length;
+        int[] colors = new int[n]; // 0: uncolored, 1: red, -1: blue
+        for (int i=0; i<n; i++) {
+            if (colors[i] == 0 && !dfs(graph, colors, i, 1)) {
+                return false;
+            }
+        }
+        return true;
     }
-
+    private boolean dfs(int[][] graph, int[] colors, int node, int color) {
+        if (colors[node] != 0) return colors[node] == color;
+        colors[node] = color;
+        for (int neighbor : graph[node]) {
+            if (!dfs(graph, colors, neighbor, -color)) return false;
+        }
+        return true;
+    }
     public static void main(String[] args) {
-        System.out.println("✅ Is Graph Bipartite? template loaded.");
+        System.out.println("✅ Is Graph Bipartite implemented.");
     }
 }

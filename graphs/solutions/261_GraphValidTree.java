@@ -1,17 +1,24 @@
-/**
- * 261. Graph Valid Tree
- * Difficulty: Medium
- * Pattern: Union-Find / BFS
- * 
- * Auto-generated blueprint.
- */
-class _261_GraphValidTree {
-    // TODO: Implement Graph Valid Tree algorithm
-    public void solve() {
-        // Core pattern: Union-Find / BFS
-    }
+import java.util.*;
 
+class _261_GraphValidTree {
+    public boolean validTree(int n, int[][] edges) {
+        if (edges.length != n - 1) return false;
+        int[] parent = new int[n];
+        for (int i = 0; i < n; i++) parent[i] = i;
+        
+        for (int[] edge : edges) {
+            int root1 = find(parent, edge[0]);
+            int root2 = find(parent, edge[1]);
+            if (root1 == root2) return false;
+            parent[root1] = root2;
+        }
+        return true;
+    }
+    private int find(int[] parent, int i) {
+        if (parent[i] == i) return i;
+        return parent[i] = find(parent, parent[i]);
+    }
     public static void main(String[] args) {
-        System.out.println("✅ Graph Valid Tree template loaded.");
+        System.out.println("✅ Graph Valid Tree implemented.");
     }
 }
