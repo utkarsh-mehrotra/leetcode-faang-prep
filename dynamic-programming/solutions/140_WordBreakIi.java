@@ -1,17 +1,25 @@
-/**
- * 140. Word Break II
- * Difficulty: Hard
- * Pattern: DP + Backtracking (Memoized)
- * 
- * Auto-generated blueprint.
- */
+import java.util.*;
 class _140_WordBreakIi {
-    // TODO: Implement Word Break II algorithm
-    public void solve() {
-        // Core pattern: DP + Backtracking (Memoized)
+    public List<String> wordBreak(String s, List<String> wordDict) {
+        return dfs(s, new HashSet<>(wordDict), new HashMap<>());
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Word Break II template loaded.");
+    private List<String> dfs(String s, Set<String> dict, Map<String, List<String>> map) {
+        if (map.containsKey(s)) return map.get(s);
+        List<String> res = new ArrayList<>();
+        if (s.length() == 0) {
+            res.add("");
+            return res;
+        }
+        for (String word : dict) {
+            if (s.startsWith(word)) {
+                List<String> subList = dfs(s.substring(word.length()), dict, map);
+                for (String sub : subList) {
+                    res.add(word + (sub.isEmpty() ? "" : " ") + sub);
+                }
+            }
+        }
+        map.put(s, res);
+        return res;
     }
+    public static void main(String[] args) {}
 }

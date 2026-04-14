@@ -1,17 +1,13 @@
-/**
- * 62. Unique Paths
- * Difficulty: Medium
- * Pattern: 2D Grid DP
- * 
- * Auto-generated blueprint.
- */
 class _062_UniquePaths {
-    // TODO: Implement Unique Paths algorithm
-    public void solve() {
-        // Core pattern: 2D Grid DP
+    public int uniquePaths(int m, int n) {
+        int[] dp = new int[n];
+        java.util.Arrays.fill(dp, 1);
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
+                dp[j] += dp[j - 1];
+            }
+        }
+        return dp[n - 1];
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Unique Paths template loaded.");
-    }
+    public static void main(String[] args) {}
 }

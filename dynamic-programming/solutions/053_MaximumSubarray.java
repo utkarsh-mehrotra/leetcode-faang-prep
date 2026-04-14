@@ -1,17 +1,12 @@
-/**
- * 53. Maximum Subarray
- * Difficulty: Medium
- * Pattern: 1D DP / Kadane's
- * 
- * Auto-generated blueprint.
- */
 class _053_MaximumSubarray {
-    // TODO: Implement Maximum Subarray algorithm
-    public void solve() {
-        // Core pattern: 1D DP / Kadane's
+    public int maxSubArray(int[] nums) {
+        int max = nums[0];
+        int curr = 0;
+        for (int n : nums) {
+            curr = Math.max(curr, 0) + n;
+            max = Math.max(max, curr);
+        }
+        return max;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Maximum Subarray template loaded.");
-    }
+    public static void main(String[] args) {}
 }

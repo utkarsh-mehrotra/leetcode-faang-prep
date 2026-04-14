@@ -1,17 +1,13 @@
-/**
- * 121. Best Time to Buy/Sell Stock
- * Difficulty: Easy
- * Pattern: 1D DP / Greedy
- * 
- * Auto-generated blueprint.
- */
 class _121_BestTimeToBuysellStock {
-    // TODO: Implement Best Time to Buy/Sell Stock algorithm
-    public void solve() {
-        // Core pattern: 1D DP / Greedy
+    public int maxProfit(int[] prices) {
+        if (prices == null || prices.length == 0) return 0;
+        int maxProfit = 0;
+        int minPrice = prices[0];
+        for (int i=1; i<prices.length; i++) {
+            minPrice = Math.min(minPrice, prices[i]);
+            maxProfit = Math.max(maxProfit, prices[i] - minPrice);
+        }
+        return maxProfit;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Best Time to Buy/Sell Stock template loaded.");
-    }
+    public static void main(String[] args) {}
 }

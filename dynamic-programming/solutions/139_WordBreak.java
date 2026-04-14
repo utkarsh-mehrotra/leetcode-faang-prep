@@ -1,17 +1,19 @@
-/**
- * 139. Word Break
- * Difficulty: Medium
- * Pattern: 1D DP (String Segmentation)
- * 
- * Auto-generated blueprint.
- */
+import java.util.*;
 class _139_WordBreak {
-    // TODO: Implement Word Break algorithm
-    public void solve() {
-        // Core pattern: 1D DP (String Segmentation)
+    public boolean wordBreak(String s, List<String> wordDict) {
+        Set<String> set = new HashSet<>(wordDict);
+        boolean[] dp = new boolean[s.length() + 1];
+        dp[0] = true;
+        
+        for (int i=1; i<=s.length(); i++) {
+            for (int j=0; j<i; j++) {
+                if (dp[j] && set.contains(s.substring(j, i))) {
+                    dp[i] = true;
+                    break;
+                }
+            }
+        }
+        return dp[s.length()];
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Word Break template loaded.");
-    }
+    public static void main(String[] args) {}
 }
