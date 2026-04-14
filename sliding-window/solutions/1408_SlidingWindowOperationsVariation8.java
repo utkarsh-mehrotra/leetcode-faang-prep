@@ -1,17 +1,19 @@
-/**
- * 1408. Sliding window Operations Variation 8
- * Difficulty: Medium
- * Pattern: Fixed Window
- * 
- * Auto-generated blueprint.
- */
 class _1408_SlidingWindowOperationsVariation8 {
-    // TODO: Implement Sliding window Operations Variation 8 algorithm
-    public void solve() {
-        // Core pattern: Fixed Window
+    public int solve(int[] fruits) {
+        // Fruit Into Baskets (Longest subarray with 2 distinct elements)
+        int[] count = new int[40001];
+        int distinct = 0, max = 0, L = 0;
+        for (int R=0; R<fruits.length; R++) {
+            if (count[fruits[R]] == 0) distinct++;
+            count[fruits[R]]++;
+            while (distinct > 2) {
+                count[fruits[L]]--;
+                if (count[fruits[L]] == 0) distinct--;
+                L++;
+            }
+            max = Math.max(max, R - L + 1);
+        }
+        return max;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Sliding window Operations Variation 8 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

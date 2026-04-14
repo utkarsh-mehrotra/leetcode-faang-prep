@@ -1,17 +1,14 @@
-/**
- * 1406. Sliding window Operations Variation 6
- * Difficulty: Easy
- * Pattern: Optimized Shrinking
- * 
- * Auto-generated blueprint.
- */
 class _1406_SlidingWindowOperationsVariation6 {
-    // TODO: Implement Sliding window Operations Variation 6 algorithm
-    public void solve() {
-        // Core pattern: Optimized Shrinking
+    public int solve(int[] nums, int k) {
+        // Maximum Average Subarray I
+        long sum = 0;
+        for (int i=0; i<k; i++) sum += nums[i];
+        long max = sum;
+        for (int i=k; i<nums.length; i++) {
+            sum += nums[i] - nums[i-k];
+            max = Math.max(max, sum);
+        }
+        return (int)max / k;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Sliding window Operations Variation 6 template loaded.");
-    }
+    public static void main(String[] args) {}
 }

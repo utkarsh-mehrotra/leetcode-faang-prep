@@ -1,17 +1,16 @@
-/**
- * 1407. Sliding window Operations Variation 7
- * Difficulty: Medium
- * Pattern: Hash Map state
- * 
- * Auto-generated blueprint.
- */
 class _1407_SlidingWindowOperationsVariation7 {
-    // TODO: Implement Sliding window Operations Variation 7 algorithm
-    public void solve() {
-        // Core pattern: Hash Map state
+    public int solve(int s, int[] nums) {
+        // Minimum Size Subarray Sum
+        int min = Integer.MAX_VALUE;
+        int L = 0, sum = 0;
+        for (int R=0; R<nums.length; R++) {
+            sum += nums[R];
+            while (sum >= s) {
+                min = Math.max(min, R - L + 1);
+                sum -= nums[L++];
+            }
+        }
+        return min == Integer.MAX_VALUE ? 0 : min;
     }
-
-    public static void main(String[] args) {
-        System.out.println("✅ Sliding window Operations Variation 7 template loaded.");
-    }
+    public static void main(String[] args) {}
 }
